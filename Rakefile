@@ -13,10 +13,10 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "thinkwell_repository"
-  gem.homepage = "http://github.com/thinkwell/thinkwell_repository"
+  gem.homepage = "http://github.com/thinkwell/twrepository_gem"
   gem.license = "MIT"
-  gem.summary = %Q{Library for accessing the Thinkwell Content Repository}
-  gem.description = %Q{Library for accessing the Thinkwell Content Repository}
+  gem.summary = %Q{Ruby bindings for accessing the Thinkwell Content Repository}
+  gem.description = %Q{Ruby bindings for accessing the Thinkwell Content Repository}
   gem.email = "brandont@thinkwell.com"
   gem.authors = ["Brandon Turner"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
