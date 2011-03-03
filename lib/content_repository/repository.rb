@@ -75,7 +75,7 @@ module Thinkwell::ContentRepository
     #   version
     #   parameters
     def contentView(courseId, contentId, opts={})
-      hydrate :Content, fetch("courses/#{courseId}/content/#{contentId}/view", opts.merge({:container => containerId}))
+      hydrate :Content, fetch("courses/#{courseId}/content/#{contentId}/view", opts)
     end
 
 
@@ -83,7 +83,7 @@ module Thinkwell::ContentRepository
     #   version
     #   parameters
     def contentPreview(courseId, contentId, opts={})
-      hydrate :Content, fetch("courses/#{courseId}/content/#{contentId}/preview", opts.merge({:container => containerId}))
+      hydrate :Content, fetch("courses/#{courseId}/content/#{contentId}/preview", opts)
     end
 
 
