@@ -1,14 +1,12 @@
 PATH
-  remote: ../john-hancock
+  remote: ../john-hancock-0.0.1
   specs:
     john-hancock (0.0.1)
-      activesupport
       i18n
 
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (3.0.4)
     diff-lcs (1.1.2)
     git (1.2.5)
     i18n (0.5.0)

@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem "john-hancock", :path => "../john-hancock"
+gem "john-hancock", :path => "../john-hancock-0.0.1"
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
