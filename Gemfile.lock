@@ -1,10 +1,5 @@
-PATH
-  remote: ../john-hancock-0.0.1
-  specs:
-    john-hancock (0.0.1)
-      i18n
-
 GEM
+  remote: http://gem.thinkwell.com/
   remote: http://rubygems.org/
   specs:
     diff-lcs (1.1.2)
@@ -14,6 +9,8 @@ GEM
       bundler (~> 1.0.0)
       git (>= 1.2.5)
       rake
+    john-hancock (0.0.1)
+      i18n
     rake (0.8.7)
     rcov (0.9.9)
     rspec (2.3.0)
@@ -31,6 +28,6 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.0.0)
   jeweler (~> 1.5.2)
-  john-hancock!
+  john-hancock
   rcov
   rspec (~> 2.3.0)

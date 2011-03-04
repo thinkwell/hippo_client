@@ -39,7 +39,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/thinkwell/twrepository_gem}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.5.0}
+  s.rubygems_version = %q{1.6.0}
   s.summary = %q{Ruby bindings for accessing the Thinkwell Content Repository}
   s.test_files = [
     "spec/spec_helper.rb",
