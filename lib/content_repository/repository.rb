@@ -93,10 +93,10 @@ module Thinkwell::ContentRepository
 
     protected
 
-    def fetch(method, params={})
+    def fetch(method, params={}, format='json')
       config = self.class.config
 
-      uri = URI.parse("#{config[:url]}/#{config[:version]}/#{method}.json")
+      uri = URI.parse("#{config[:url]}/#{config[:version]}/#{method}#{format.nil? ? '' : ".#{format}"}")
       uri.query = params.to_query unless params.empty?
 
       request = Net::HTTP::Get.new(uri.request_uri)
@@ -119,7 +119,11 @@ module Thinkwell::ContentRepository
         raise Errors::RepositoryError, "An error occurred while fetching data from the repository.\n" + (message ? "Error: #{message}" : "#{response.code}: #{response.message}")
       end
 
-      JSON.parse(response.body)
+      if response.content_type == 'application/json'
+        JSON.parse(response.body)
+      else
+        response.body
+      end
     end
 
 
