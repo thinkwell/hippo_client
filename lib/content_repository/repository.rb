@@ -77,17 +77,15 @@ module Thinkwell::ContentRepository
 
     # Possible options:
     #   version
-    #   parameters
-    def contentView(courseId, contentId, opts={})
-      hydrate :Content, fetch("courses/#{courseId}/content/#{contentId}/view", opts)
+    def content(courseId, contentId, opts={})
+      hydrate :Content, fetch("courses/#{courseId}/content/#{contentId}", opts)
     end
-
 
     # Possible options:
     #   version
     #   parameters
-    def contentPreview(courseId, contentId, opts={})
-      hydrate :Content, fetch("courses/#{courseId}/content/#{contentId}/preview", opts)
+    def contentView(courseId, contentId, format='html', opts={})
+      fetch("courses/#{courseId}/content/#{contentId}/view", opts, format)
     end
 
 
