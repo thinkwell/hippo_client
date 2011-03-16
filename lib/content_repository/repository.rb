@@ -42,23 +42,26 @@ module Thinkwell::ContentRepository
     # Possible options:
     #   depth
     #   type
-    def container(courseId, containerId='root', opts={})
-      hydrate :Container, fetch("courses/#{courseId}/containers/#{containerId}", opts)
+    def container(courseId, containerId=nil, opts={})
+      containerIdStr = containerId ? "/#{containerId}" : ""
+      hydrate :Container, fetch("courses/#{courseId}/containers#{containerIdStr}", opts)
     end
 
 
     # Possible options:
     #   type
-    def containerChildren(courseId, containerId='root', opts={})
-      hydrate :Container, fetch("courses/#{courseId}/containers/#{containerId}/children", opts)
+    def containerChildren(courseId, containerId=nil, opts={})
+      containerIdStr = containerId ? "/#{containerId}" : ""
+      hydrate :Container, fetch("courses/#{courseId}/containers#{containerIdStr}/children", opts)
     end
 
 
     # Possible options:
     #   depth
     #   type
-    def containerDescendants(courseId, containerId='root', opts={})
-      hydrate :Container, fetch("courses/#{courseId}/containers/#{containerId}/descendants", opts)
+    def containerDescendants(courseId, containerId=nil, opts={})
+      containerIdStr = containerId ? "/#{containerId}" : ""
+      hydrate :Container, fetch("courses/#{courseId}/containers#{containerIdStr}/descendants", opts)
     end
 
 
@@ -66,8 +69,9 @@ module Thinkwell::ContentRepository
     #   depth
     #   format
     #   type
-    def containerContent(courseId, containerId='root', opts={})
-      hydrate :Container, fetch("courses/#{courseId}/containers/#{containerId}/content", opts)
+    def containerContent(courseId, containerId=nil, opts={})
+      containerIdStr = containerId ? "/#{containerId}" : ""
+      hydrate :Container, fetch("courses/#{courseId}/containers#{containerIdStr}/content", opts)
     end
 
 
