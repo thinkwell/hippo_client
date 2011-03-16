@@ -6,5 +6,10 @@ module Thinkwell
     autoload :Course,         'content_repository/course'
     autoload :Container,      'content_repository/container'
     autoload :Content,        'content_repository/content'
+
+    module Errors
+      autoload :RepositoryError,   'content_repository/errors/repository_error'
+      autoload :NetworkError,      'content_repository/errors/network_error'
+    end
   end
 end

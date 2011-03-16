@@ -106,12 +106,17 @@ module Thinkwell::ContentRepository
       http = Net::HTTP.new(uri.host, uri.port)
       http.use_ssl = true if uri.scheme == 'https'
 
-      response = http.request(request)
+      begin
+        response = http.request(request)
+      rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, Errno::ECONNREFUSED, EOFError,
+             Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
+        raise Errors::NetworkError, e
+      end
 
       if response.code.to_i != 200
         # TODO: Throw a better exception
         message = JSON.parse(response.body)['message'] rescue nil
-        raise RuntimeError, "An error occurred while fetching data from the repository." + (message ? "\nError: #{message}" : "")
+        raise Errors::RepositoryError, "An error occurred while fetching data from the repository.\n" + (message ? "Error: #{message}" : "#{response.code}: #{response.message}")
       end
 
       JSON.parse(response.body)
