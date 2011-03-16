@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{thinkwell_repository}
-  s.version = "0.0.3"
+  s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Brandon Turner"]
-  s.date = %q{2011-03-09}
+  s.date = %q{2011-03-16}
   s.description = %q{Ruby bindings for accessing the Thinkwell Content Repository}
   s.email = %q{brandont@thinkwell.com}
   s.extra_rdoc_files = [
@@ -28,6 +28,8 @@ Gem::Specification.new do |s|
     "lib/content_repository/container.rb",
     "lib/content_repository/content.rb",
     "lib/content_repository/course.rb",
+    "lib/content_repository/errors/network_error.rb",
+    "lib/content_repository/errors/repository_error.rb",
     "lib/content_repository/hash_initialize.rb",
     "lib/content_repository/repository.rb",
     "lib/content_repository/subject.rb",
