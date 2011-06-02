@@ -1,6 +1,6 @@
 module Thinkwell::ContentRepository
-  class Subject
+  class Product
     include HashInitialize
-    attr_accessor :id, :name
+    attr_accessor :id, :name, :default_course_id
   end
 end

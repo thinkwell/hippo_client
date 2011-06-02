@@ -33,8 +33,8 @@ Gem::Specification.new do |s|
     "lib/content_repository_client/errors/network_error.rb",
     "lib/content_repository_client/errors/repository_error.rb",
     "lib/content_repository_client/hash_initialize.rb",
+    "lib/content_repository_client/product.rb",
     "lib/content_repository_client/repository.rb",
-    "lib/content_repository_client/subject.rb",
     "spec/content_repository_client_spec.rb",
     "spec/spec_helper.rb"
   ]

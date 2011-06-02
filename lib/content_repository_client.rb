@@ -2,7 +2,7 @@ module Thinkwell
   module ContentRepository
     autoload :HashInitialize, 'content_repository_client/hash_initialize'
     autoload :Repository,     'content_repository_client/repository'
-    autoload :Subject,        'content_repository_client/subject'
+    autoload :Product,        'content_repository_client/product'
     autoload :Course,         'content_repository_client/course'
     autoload :Container,      'content_repository_client/container'
     autoload :Content,        'content_repository_client/content'

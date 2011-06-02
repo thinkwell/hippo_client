@@ -15,13 +15,13 @@ module Thinkwell::ContentRepository
     end
 
 
-    def subjects
-      hydrate :Subject, fetch('subjects')
+    def products
+      hydrate :Product, fetch('products')
     end
 
 
     # Possible options:
-    #   subject
+    #   product
     def courses(opts={})
       hydrate :Course, fetch('courses', opts)
     end
