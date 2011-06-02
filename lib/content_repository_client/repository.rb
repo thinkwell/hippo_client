@@ -8,9 +8,9 @@ module Thinkwell::ContentRepository
 
     def self.config
       return @config if defined?(@config)
-      @config ||= (HashWithIndifferentAccess.new(YAML.load_file(RAILS_ROOT + "/config/thinkwell_repository.yml")[RAILS_ENV]) rescue nil)
+      @config ||= (HashWithIndifferentAccess.new(YAML.load_file(RAILS_ROOT + "/config/content_repository_client.yml")[RAILS_ENV]) rescue nil)
 
-      raise RuntimeError, "Can't find configuration for the Thinkwell Content Repository.  Check your thinkwell_repository.yml configuration file." unless @config
+      raise RuntimeError, "Can't find configuration for the Thinkwell Content Repository.  Check your content_repository_client.yml configuration file." unless @config
       @config
     end
 

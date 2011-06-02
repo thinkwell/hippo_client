@@ -1,7 +1,7 @@
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'rspec'
-require 'thinkwell_repository'
+require 'content_repository_client'
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.

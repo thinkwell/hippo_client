@@ -4,12 +4,12 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{thinkwell_repository}
+  s.name = %q{content_repository_client}
   s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Brandon Turner"]
-  s.date = %q{2011-03-16}
+  s.date = %q{2011-06-02}
   s.description = %q{Ruby bindings for accessing the Thinkwell Content Repository}
   s.email = %q{brandont@thinkwell.com}
   s.extra_rdoc_files = [
@@ -25,27 +25,27 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/content_repository/container.rb",
-    "lib/content_repository/content.rb",
-    "lib/content_repository/course.rb",
-    "lib/content_repository/errors/network_error.rb",
-    "lib/content_repository/errors/repository_error.rb",
-    "lib/content_repository/hash_initialize.rb",
-    "lib/content_repository/repository.rb",
-    "lib/content_repository/subject.rb",
-    "lib/thinkwell_repository.rb",
-    "spec/spec_helper.rb",
-    "spec/thinkwell_repository_spec.rb",
-    "thinkwell_repository.gemspec"
+    "content_repository_client.gemspec",
+    "lib/content_repository_client.rb",
+    "lib/content_repository_client/container.rb",
+    "lib/content_repository_client/content.rb",
+    "lib/content_repository_client/course.rb",
+    "lib/content_repository_client/errors/network_error.rb",
+    "lib/content_repository_client/errors/repository_error.rb",
+    "lib/content_repository_client/hash_initialize.rb",
+    "lib/content_repository_client/repository.rb",
+    "lib/content_repository_client/subject.rb",
+    "spec/content_repository_client_spec.rb",
+    "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/thinkwell/twrepository_gem}
+  s.homepage = %q{http://github.com/thinkwell/content_repository_client}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.6.0}
   s.summary = %q{Ruby bindings for accessing the Thinkwell Content Repository}
   s.test_files = [
-    "spec/spec_helper.rb",
-    "spec/thinkwell_repository_spec.rb"
+    "spec/content_repository_client_spec.rb",
+    "spec/spec_helper.rb"
   ]
 
   if s.respond_to? :specification_version then

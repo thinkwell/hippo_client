@@ -12,8 +12,8 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "thinkwell_repository"
-  gem.homepage = "http://github.com/thinkwell/twrepository_gem"
+  gem.name = "content_repository_client"
+  gem.homepage = "http://github.com/thinkwell/content_repository_client"
   gem.license = "MIT"
   gem.summary = %Q{Ruby bindings for accessing the Thinkwell Content Repository}
   gem.description = %Q{Ruby bindings for accessing the Thinkwell Content Repository}
@@ -44,7 +44,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "thinkwell_repository #{version}"
+  rdoc.title = "content_repository_client #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
