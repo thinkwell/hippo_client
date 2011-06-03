@@ -68,7 +68,6 @@ module Thinkwell::ContentRepository
     # Possible options:
     #   depth
     #   format
-    #   type
     def containerContent(courseId, containerId=nil, opts={})
       containerIdStr = containerId ? "/#{containerId}" : ""
       hydrate :Container, fetch("courses/#{courseId}/containers#{containerIdStr}/content", opts)
