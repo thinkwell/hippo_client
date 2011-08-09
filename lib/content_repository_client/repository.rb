@@ -20,6 +20,11 @@ module Thinkwell::ContentRepository
     end
 
 
+    def product(productId)
+      hydrate :Product, fetch("products/#{productId}")
+    end
+
+
     # Possible options:
     #   product
     def courses(opts={})
