@@ -5,16 +5,16 @@
 
 Gem::Specification.new do |s|
   s.name = %q{content_repository_client}
-  s.version = "0.0.5"
+  s.version = "0.0.6"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Brandon Turner"]
-  s.date = %q{2011-06-03}
+  s.authors = [%q{Brandon Turner}]
+  s.date = %q{2011-08-09}
   s.description = %q{Ruby bindings for accessing the Thinkwell Content Repository}
   s.email = %q{brandont@thinkwell.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.markdown"
   ]
   s.files = [
     ".document",
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.markdown",
     "Rakefile",
     "VERSION",
     "content_repository_client.gemspec",
@@ -39,9 +39,9 @@ Gem::Specification.new do |s|
     "spec/spec_helper.rb"
   ]
   s.homepage = %q{http://github.com/thinkwell/content_repository_client}
-  s.licenses = ["MIT"]
-  s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.0}
+  s.licenses = [%q{MIT}]
+  s.require_paths = [%q{lib}]
+  s.rubygems_version = %q{1.8.6}
   s.summary = %q{Ruby bindings for accessing the Thinkwell Content Repository}
   s.test_files = [
     "spec/content_repository_client_spec.rb",
