@@ -18,7 +18,7 @@ Add a configuration file in your Rails `config` folder:
     defaults: &defaults
     
       url:              'http://api.thinkwell.com/repository'
-      video-player-url: '/flash/TWPlayer_1.0.swf'
+      video_player_url: '/flash/TWPlayer_1.0.swf'
     
       version:      1
       signature:
