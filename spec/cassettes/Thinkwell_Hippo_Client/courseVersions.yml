@@ -1,0 +1,37 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://localhost:3000/courses/4d76a706f7764853be000003/versions.json
+    body: 
+    headers: 
+      accept: 
+      - application/json
+      x-api-key: 
+      - 4d26276a99cf2b1291000001
+      x-api-timestamp: !ruby/regexp /^[0-9]{10}$/
+      x-api-signature: !ruby/regexp /^[0-9a-f]{32}$/
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-ua-compatible: 
+      - IE=Edge
+      etag: 
+      - "\"c49269e1a4a866206923c0165b62e605\""
+      content-type: 
+      - application/json; charset=utf-8
+      date: 
+      - Wed, 31 Aug 2011 16:43:36 GMT
+      x-runtime: 
+      - "0.193871"
+      set-cookie: 
+      - _hippo_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlMDNjOTBhMTk1YzVhOTM3NTUxMWU4ZDFlZTZjYmU0NDU%3D--8f0f0a3fa303929b26ccdf81bccce9d7ed32a631; path=/; HttpOnly
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - 200 OK
+    body: "[{\"id\":\"4d76a706f7764853be000003\",\"container_id\":\"4d76a704f7764853be000002\",\"created\":\"2011-03-08\",\"name\":\"Calculus\",\"product_id\":\"4d76a704f7764853be000001\",\"subject_id\":\"4d76a704f7764853be000001\",\"version\":1}]"
+    http_version: "1.1"
+  "@ignored": false

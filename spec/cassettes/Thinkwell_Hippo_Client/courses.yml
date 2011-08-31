@@ -1,0 +1,73 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://localhost:3000/courses.json
+    body: 
+    headers: 
+      accept: 
+      - application/json
+      x-api-key: 
+      - 4d26276a99cf2b1291000001
+      x-api-timestamp: !ruby/regexp /^[0-9]{10}$/
+      x-api-signature: !ruby/regexp /^[0-9a-f]{32}$/
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-ua-compatible: 
+      - IE=Edge
+      etag: 
+      - "\"561e57604762664d3cb5dccce17196d9\""
+      content-type: 
+      - application/json; charset=utf-8
+      x-runtime: 
+      - "0.197566"
+      date: 
+      - Wed, 31 Aug 2011 16:03:29 GMT
+      set-cookie: 
+      - _hippo_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlZjk4YTlmMTA0YmVhMDcxZmE2NGRjNjNmOTljOWI4YmY%3D--a3d01716ade2041d810370d99c4a5f43abc46090; path=/; HttpOnly
+      status: 
+      - 200 OK
+      cache-control: 
+      - max-age=0, private, must-revalidate
+    body: "[{\"id\":\"4d76a706f7764853be000003\",\"container_id\":\"4d76a704f7764853be000002\",\"created\":\"2011-03-08\",\"name\":\"Calculus\",\"product_id\":\"4d76a704f7764853be000001\",\"subject_id\":\"4d76a704f7764853be000001\",\"version\":1},{\"id\":\"4dee712bf776482745000003\",\"container_id\":\"4dee712af776482745000002\",\"created\":\"2011-06-07\",\"name\":\"College Algebra\",\"product_id\":\"4dee712af776482745000001\",\"version\":1}]"
+    http_version: "1.1"
+  "@ignored": false
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://localhost:3000/courses.json?product=4d76a704f7764853be000001
+    body: 
+    headers: 
+      accept: 
+      - application/json
+      x-api-key: 
+      - 4d26276a99cf2b1291000001
+      x-api-timestamp: !ruby/regexp /^[0-9]{10}$/
+      x-api-signature: !ruby/regexp /^[0-9a-f]{32}$/
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-ua-compatible: 
+      - IE=Edge
+      etag: 
+      - "\"c49269e1a4a866206923c0165b62e605\""
+      content-type: 
+      - application/json; charset=utf-8
+      date: 
+      - Wed, 31 Aug 2011 16:33:51 GMT
+      x-runtime: 
+      - "0.193124"
+      set-cookie: 
+      - _hippo_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlODg4MDY4ZjgxOTc2MDMwOTc3MjljNDYwZTNmODgxMzA%3D--863c6d01e90678db22540a7f3151d795df42d54d; path=/; HttpOnly
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - 200 OK
+    body: "[{\"id\":\"4d76a706f7764853be000003\",\"container_id\":\"4d76a704f7764853be000002\",\"created\":\"2011-03-08\",\"name\":\"Calculus\",\"product_id\":\"4d76a704f7764853be000001\",\"subject_id\":\"4d76a704f7764853be000001\",\"version\":1}]"
+    http_version: "1.1"
+  "@ignored": false

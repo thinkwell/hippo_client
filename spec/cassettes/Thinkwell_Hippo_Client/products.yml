@@ -1,0 +1,37 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://localhost:3000/products.json
+    body: 
+    headers: 
+      accept: 
+      - application/json
+      x-api-key: 
+      - 4d26276a99cf2b1291000001
+      x-api-timestamp: !ruby/regexp /^[0-9]{10}$/
+      x-api-signature: !ruby/regexp /^[0-9a-f]{32}$/
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-ua-compatible: 
+      - IE=Edge
+      etag: 
+      - "\"04991ec5341e74b816165ccbddeaa24a\""
+      content-type: 
+      - application/json; charset=utf-8
+      date: 
+      - Wed, 31 Aug 2011 14:37:56 GMT
+      x-runtime: 
+      - "0.484854"
+      set-cookie: 
+      - _hippo_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlNDk4OWI3YmE2MGY1OTliMzM5YjhhYzBkYThiNGI3NDE%3D--b0f4273e1201977351c02499a2f7222e6882c7ae; path=/; HttpOnly
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - 200 OK
+    body: "[{\"id\":\"4d76a704f7764853be000001\",\"default_course_id\":\"4d76a706f7764853be000003\",\"mapleta_parent_id\":5,\"name\":\"Calculus\"},{\"id\":\"4dee712af776482745000001\",\"default_course_id\":\"4dee712bf776482745000003\",\"mapleta_parent_id\":6,\"name\":\"College Algebra\"}]"
+    http_version: "1.1"
+  "@ignored": false

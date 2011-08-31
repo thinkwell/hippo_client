@@ -1,4 +1,4 @@
-module Thinkwell::ContentRepository
+module Thinkwell::Hippo
   module HashInitialize
 
     # TODO: Should we use ActiveSupport::Concern?

@@ -1,7 +1,9 @@
 source "http://gem.thinkwell.com"
 source "http://rubygems.org"
 
-gem "john-hancock"
+gem "john-hancock", '>= 0.0.4'
+gem "json"
+gem "activesupport"
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
@@ -11,4 +13,9 @@ group :development do
   gem "jeweler", "~> 1.5.2"
   gem "rcov", ">= 0"
   gem "rdoc"
+end
+
+group :test do
+  gem 'vcr'
+  gem 'webmock'
 end

@@ -12,11 +12,11 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "content_repository_client"
-  gem.homepage = "http://github.com/thinkwell/content_repository_client"
+  gem.name = "hippo_client"
+  gem.homepage = "http://github.com/thinkwell/hippo_client"
   gem.license = "MIT"
-  gem.summary = %Q{Ruby bindings for accessing the Thinkwell Content Repository}
-  gem.description = %Q{Ruby bindings for accessing the Thinkwell Content Repository}
+  gem.summary = %Q{Ruby bindings for accessing Hippo}
+  gem.description = %Q{Ruby bindings for accessing Hippo}
   gem.email = "brandont@thinkwell.com"
   gem.authors = ["Brandon Turner"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
@@ -44,7 +44,7 @@ RDoc::Task.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "content_repository_client #{version}"
+  rdoc.title = "hippo_client #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

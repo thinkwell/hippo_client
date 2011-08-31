@@ -1,0 +1,109 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://localhost:3000/courses/4d76a706f7764853be000003/containers/children.json
+    body: 
+    headers: 
+      accept: 
+      - application/json
+      x-api-key: 
+      - 4d26276a99cf2b1291000001
+      x-api-timestamp: !ruby/regexp /^[0-9]{10}$/
+      x-api-signature: !ruby/regexp /^[0-9a-f]{32}$/
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-ua-compatible: 
+      - IE=Edge
+      etag: 
+      - "\"e6e008572c6f190bebddb110a230005f\""
+      content-type: 
+      - application/json; charset=utf-8
+      date: 
+      - Wed, 31 Aug 2011 17:33:34 GMT
+      x-runtime: 
+      - "0.308505"
+      set-cookie: 
+      - _hippo_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlMWUwMjAxZTNhY2Y3MDM5ZmJlYWI5MzRjMzY4Njk5NTY%3D--6fbca8a115207bfec184898f0137f463f2632c8d; path=/; HttpOnly
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - 200 OK
+    body: "[{\"id\":\"4d76a707f7764853be000008\",\"type\":\"container\",\"depth\":1,\"lft\":2.0,\"name\":\"The Basics\",\"number\":\"1\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":79.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a709f7764853be000046\",\"type\":\"container\",\"depth\":1,\"lft\":80.0,\"name\":\"Limits\",\"number\":\"2\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":181.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a70bf7764853be00009d\",\"type\":\"container\",\"depth\":1,\"lft\":182.0,\"name\":\"An Introduction to Derivatives\",\"number\":\"3\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":269.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a70ff7764853be0000e7\",\"type\":\"container\",\"depth\":1,\"lft\":270.0,\"name\":\"Computational Techniques\",\"number\":\"4\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":341.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a712f7764853be000123\",\"type\":\"container\",\"depth\":1,\"lft\":342.0,\"name\":\"Special Functions\",\"number\":\"5\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":431.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a717f7764853be00016e\",\"type\":\"container\",\"depth\":1,\"lft\":432.0,\"name\":\"Implicit Differentiation\",\"number\":\"6\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":469.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a71af7764853be00018d\",\"type\":\"container\",\"depth\":1,\"lft\":470.0,\"name\":\"Applications of Differentiation\",\"number\":\"7\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":599.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a722f7764853be0001fb\",\"type\":\"container\",\"depth\":1,\"lft\":600.0,\"name\":\"Curve Sketching\",\"number\":\"8\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":771.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a72ef7764853be00028d\",\"type\":\"container\",\"depth\":1,\"lft\":772.0,\"name\":\"The Basics of Integration\",\"number\":\"9\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":901.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a739f7764853be0002fb\",\"type\":\"container\",\"depth\":1,\"lft\":902.0,\"name\":\"Applications of Integration\",\"number\":\"10\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":989.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a743f7764853be000345\",\"type\":\"container\",\"depth\":1,\"lft\":990.0,\"name\":\"Calculus I Review\",\"number\":\"11\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":1001.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a747f7764853be00034e\",\"type\":\"container\",\"depth\":1,\"lft\":1002.0,\"name\":\"Math Fun\",\"number\":\"12\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":1057.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a74ef7764853be00037c\",\"type\":\"container\",\"depth\":1,\"lft\":1058.0,\"name\":\"An Introduction to Calculus II\",\"number\":\"13\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":1077.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a752f7764853be00038c\",\"type\":\"container\",\"depth\":1,\"lft\":1078.0,\"name\":\"L'H&ocirc;pital's Rule\",\"number\":\"14\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":1147.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a75bf7764853be0003c7\",\"type\":\"container\",\"depth\":1,\"lft\":1148.0,\"name\":\"Elementary Functions and Their Inverses\",\"number\":\"15\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":1271.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a769f7764853be00042f\",\"type\":\"container\",\"depth\":1,\"lft\":1272.0,\"name\":\"Techniques of Integration\",\"number\":\"16\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":1517.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a787f7764853be0004fe\",\"type\":\"container\",\"depth\":1,\"lft\":1518.0,\"name\":\"Improper Integrals\",\"number\":\"17\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":1545.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a78ef7764853be000515\",\"type\":\"container\",\"depth\":1,\"lft\":1546.0,\"name\":\"Applications of Integral Calculus\",\"number\":\"18\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":1697.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a7a4f7764853be000593\",\"type\":\"container\",\"depth\":1,\"lft\":1698.0,\"name\":\"Sequences and Series\",\"number\":\"19\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":1921.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a7c8f7764853be000630\",\"type\":\"container\",\"depth\":1,\"lft\":1922.0,\"name\":\"Differential Equations\",\"number\":\"20\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":1979.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a7d5f7764853be000659\",\"type\":\"container\",\"depth\":1,\"lft\":1980.0,\"name\":\"Parametric Equations and Polar Coordinates\",\"number\":\"21\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":2063.0,\"root_id\":\"4d76a704f7764853be000002\"},{\"id\":\"4d76a7e7f7764853be000695\",\"type\":\"container\",\"depth\":1,\"lft\":2064.0,\"name\":\"Vector Calculus and the Geometry of <b>R</b><sup>2</sup> and <b>R</b><sup>3</sup>\",\"number\":\"22\",\"parent_id\":\"4d76a704f7764853be000002\",\"rgt\":2117.0,\"root_id\":\"4d76a704f7764853be000002\"}]"
+    http_version: "1.1"
+  "@ignored": false
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://localhost:3000/courses/4d76a706f7764853be000003/containers/4d76a707f7764853be000011/children.json
+    body: 
+    headers: 
+      accept: 
+      - application/json
+      x-api-key: 
+      - 4d26276a99cf2b1291000001
+      x-api-timestamp: !ruby/regexp /^[0-9]{10}$/
+      x-api-signature: !ruby/regexp /^[0-9a-f]{32}$/
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-ua-compatible: 
+      - IE=Edge
+      etag: 
+      - "\"36c94151a35d09d493022ce6395de38b\""
+      content-type: 
+      - application/json; charset=utf-8
+      x-runtime: 
+      - "0.305894"
+      date: 
+      - Wed, 31 Aug 2011 17:34:50 GMT
+      set-cookie: 
+      - _hippo_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlN2UzNGVlZmEzOGViZjVjYTliNWFmZGNmMGJmNzIzMmI%3D--ef9188f19466e3edcb7b60b13a5e913e678f7fe6; path=/; HttpOnly
+      status: 
+      - 200 OK
+      cache-control: 
+      - max-age=0, private, must-revalidate
+    body: "[{\"id\":\"4d76a707f7764853be000013\",\"type\":\"content\",\"content_id\":\"4d76a707f7764853be000012\",\"content_version\":1,\"depth\":4,\"lft\":15.0,\"meta\":{\"type\":\"Video\",\"width\":640,\"height\":425,\"duration\":569,\"format\":\"video\"},\"name\":\"Watch Lecture\",\"parent_id\":\"4d76a707f7764853be000011\",\"rgt\":16.0,\"root_id\":\"4d76a704f7764853be000002\",\"title\":\"The Two Questions of Calculus\"},{\"id\":\"4d76a707f7764853be000015\",\"type\":\"content\",\"content_id\":\"4d76a707f7764853be000014\",\"content_version\":1,\"depth\":4,\"lft\":17.0,\"meta\":{\"type\":\"Notes\",\"format\":\"pdf\"},\"name\":\"Notes\",\"parent_id\":\"4d76a707f7764853be000011\",\"rgt\":18.0,\"root_id\":\"4d76a704f7764853be000002\",\"title\":\"The Two Questions of Calculus\"},{\"id\":\"4d76a707f7764853be000017\",\"type\":\"content\",\"content_id\":\"4d76a707f7764853be000016\",\"content_version\":1,\"depth\":4,\"lft\":19.0,\"meta\":{\"type\":\"Transcript\",\"format\":\"pdf\"},\"name\":\"Transcript\",\"parent_id\":\"4d76a707f7764853be000011\",\"rgt\":20.0,\"root_id\":\"4d76a704f7764853be000002\",\"title\":\"The Two Questions of Calculus\"}]"
+    http_version: "1.1"
+  "@ignored": false
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://localhost:3000/courses/4d76a706f7764853be000003/containers/children.json?type=content
+    body: 
+    headers: 
+      accept: 
+      - application/json
+      x-api-key: 
+      - 4d26276a99cf2b1291000001
+      x-api-timestamp: !ruby/regexp /^[0-9]{10}$/
+      x-api-signature: !ruby/regexp /^[0-9a-f]{32}$/
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-ua-compatible: 
+      - IE=Edge
+      etag: 
+      - "\"d751713988987e9331980363e24189ce\""
+      content-type: 
+      - application/json; charset=utf-8
+      date: 
+      - Wed, 31 Aug 2011 17:35:51 GMT
+      x-runtime: 
+      - "0.306911"
+      set-cookie: 
+      - _hippo_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlZDBiNWQ1ZjgwOTE5NzkxN2Q3YjcyY2NiZjBkMjNhOTM%3D--6cdc23c76af75a4a929ad9f0e15048e86785aa86; path=/; HttpOnly
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - 200 OK
+    body: "[]"
+    http_version: "1.1"
+  "@ignored": false

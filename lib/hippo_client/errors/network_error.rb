@@ -1,6 +1,6 @@
-module Thinkwell::ContentRepository
+module Thinkwell::Hippo
   module Errors
-    class NetworkError < RepositoryError
+    class NetworkError < HippoError
 
       attr_reader :original_error
 

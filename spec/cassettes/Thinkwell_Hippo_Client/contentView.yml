@@ -1,0 +1,73 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://localhost:3000/courses/4d76a706f7764853be000003/content/4d76a707f7764853be00000b/view.html
+    body: 
+    headers: 
+      accept: 
+      - application/json
+      x-api-key: 
+      - 4d26276a99cf2b1291000001
+      x-api-timestamp: !ruby/regexp /^[0-9]{10}$/
+      x-api-signature: !ruby/regexp /^[0-9a-f]{32}$/
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-ua-compatible: 
+      - IE=Edge
+      etag: 
+      - "\"7fe8a37f5b3ff3cdb1198e1daeead63e\""
+      content-type: 
+      - text/html; charset=utf-8
+      date: 
+      - Wed, 31 Aug 2011 18:19:02 GMT
+      x-runtime: 
+      - "0.350440"
+      set-cookie: 
+      - _hippo_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlNjNiZWU1NGYzNTk0NWRmNzhmMzQzOTMwY2E5ODNiOGM%3D--be69491f8a106a5d63ffee5a52ac05a5351e52ae; path=/; HttpOnly
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - 200 OK
+    body: |
+      <div style="width: 640px; height: 455px;" class="twvideoplayer" id="video-1314814742310843">&nbsp;</div>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+      <script type="text/javascript">
+      /* <![CDATA[ */
+      swfobject.embedSWF(
+          'http://thinkwell.cachefly.net/player/TWPlayer_1.0.swf',
+          'video-1314814742310843',
+          '640',
+          '455',
+          '8',
+          '', 
+          {"width":640,"height":425,"fullScreen":false,"C":"000cd000a300093000d7000a80009e000b600085000de000a10009a0006200090000e4000bf000da0006e0005400092000b700098000ab000a1000da000a90008b00091000940009e000ae000cb000970008d000c8000a90009c000bb00061000dd000970009a0005400078000e2000ba000de0009900088000d7000a8000940007100098000e7000a20008f000970008d000e4000b4000d70009900062000940007600061000760006b000a0000660005d0005c0005a000ab000ad000cb000980009a000d5000af0006d000a30007b000c100062000890006900097000e6000970009d0009800058000c7000bc000650007200094000b60009e0009b000860005b000d4000b7000cc0007b0009c000d80009c000620007b000a70009e000970005f0008800061000a60007c0009a0009a00059000c9000a800061000a700067000d5000940005d000580005f000a10007b000a30006a0005d000c9000a5000940007900064000a3000950005f000540008b000df000b9000de0009900093000d7000720009c000a700096000e3000a7000980008a0009b0009f000ae000cb000a00005400089000b900099000a600098000de0008400095000940009c000ad000bd000de000a1000950009d000720005f000aa000a80009f00063000890009b0009a000d600079000dc000a800092000d3000ab0009f000b5000a70009d00095000950009200057000e4000b3000d3000a200090000da000a80009c000ae00062000db0009700089000990009d000e2000b0000dd0006300088000c4000af0005f0007400064000a300067000550004b00098000d1000bf000d200071000570009400077000650007100065000a0000660005b00084000590009e000c3000d7000a00004b000c5000b800096000a800098000e100082000890009900065000a100071000d3000a20008e000d7000ac00091000ae00086000e3000930009a0008a00065000e0000b7000cb000ad0004b000d6000ab0009f000b90007f000de000930008a0008e00096000d700098000cf000a700098000c4000aa000950007f000a7000e1000a70008b0004b0008c000d5000b1000cb000a900091000d7000990009f000ae000a8000dc00097000630005a00058"},
+          {menu: false, wmode: 'opaque', scale: 'showall', salign: 't', bgcolor: '#FFFFFF'},
+          {},
+          function(e) {
+              if(e.success)
+              {
+                  // Fix bug in Firefox 4 where content isn't displayed until mouse
+                  // moves or focus changes
+                  var el = document.getElementById(e.id);
+                  if(el) {
+                    setTimeout(function() {
+                      el.focus();
+                      el.blur();
+                    }, 250);
+                  }
+              }
+              else
+              {
+                  document.getElementById(e.id).innerHTML = '<p>This content requires Adobe\'s <b>Flash Player 8 or higher</b>. Click on the link below to download and install the latest version of the <a href="http://get.adobe.com/flashplayer/"><b>Flash Player</b></a>.</p><p><a href="http://get.adobe.com/flashplayer/"><b>Click here</b></a> to download and install the latest <b>Flash Player</b>.</p>';
+              }
+          }
+      );
+      /* ]]> */
+      </script>
+
+    http_version: "1.1"
+  "@ignored": false
