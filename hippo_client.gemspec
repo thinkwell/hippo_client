@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{hippo_client}
-  s.version = "0.0.8"
+  s.name = "hippo_client"
+  s.version = "0.0.9"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{Brandon Turner}]
-  s.date = %q{2011-08-31}
-  s.description = %q{Ruby bindings for accessing Hippo}
-  s.email = %q{brandont@thinkwell.com}
+  s.authors = ["Brandon Turner"]
+  s.date = "2011-11-02"
+  s.description = "Ruby bindings for accessing Hippo"
+  s.email = "brandont@thinkwell.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.markdown"
@@ -60,11 +60,11 @@ Gem::Specification.new do |s|
     "spec/hippo_client_spec.rb",
     "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/thinkwell/hippo_client}
-  s.licenses = [%q{MIT}]
-  s.require_paths = [%q{lib}]
-  s.rubygems_version = %q{1.8.6}
-  s.summary = %q{Ruby bindings for accessing Hippo}
+  s.homepage = "http://github.com/thinkwell/hippo_client"
+  s.licenses = ["MIT"]
+  s.require_paths = ["lib"]
+  s.rubygems_version = "1.8.10"
+  s.summary = "Ruby bindings for accessing Hippo"
   s.test_files = [
     "spec/hippo_client/client/containers_spec.rb",
     "spec/hippo_client/client/content_spec.rb",
@@ -79,7 +79,7 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<john-hancock>, [">= 0.0.4"])
+      s.add_runtime_dependency(%q<john-hancock>, ["~> 0.0.4"])
       s.add_runtime_dependency(%q<json>, [">= 0"])
       s.add_runtime_dependency(%q<activesupport>, [">= 0"])
       s.add_development_dependency(%q<rspec>, ["~> 2.3.0"])
@@ -88,7 +88,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rcov>, [">= 0"])
       s.add_development_dependency(%q<rdoc>, [">= 0"])
     else
-      s.add_dependency(%q<john-hancock>, [">= 0.0.4"])
+      s.add_dependency(%q<john-hancock>, ["~> 0.0.4"])
       s.add_dependency(%q<json>, [">= 0"])
       s.add_dependency(%q<activesupport>, [">= 0"])
       s.add_dependency(%q<rspec>, ["~> 2.3.0"])
@@ -98,7 +98,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<rdoc>, [">= 0"])
     end
   else
-    s.add_dependency(%q<john-hancock>, [">= 0.0.4"])
+    s.add_dependency(%q<john-hancock>, ["~> 0.0.4"])
     s.add_dependency(%q<json>, [">= 0"])
     s.add_dependency(%q<activesupport>, [">= 0"])
     s.add_dependency(%q<rspec>, ["~> 2.3.0"])
