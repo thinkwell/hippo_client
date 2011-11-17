@@ -8,7 +8,8 @@ module Thinkwell
     module Model
       autoload :Product,          'hippo_client/model/product'
       autoload :Course,           'hippo_client/model/course'
-      autoload :Container,        'hippo_client/model/container'
+      autoload :CourseTree,       'hippo_client/model/course_tree'
+      autoload :Node,             'hippo_client/model/node'
       autoload :Content,          'hippo_client/model/content'
     end
 

@@ -46,8 +46,7 @@ Obtain a list of products:
 
 ### Courses
 
-Each product has one or more courses.  A course is a tree of containers, where the
-branches represent chapters, and the leaves are content (video, lecture notes, etc).
+Each product has one or more courses.
 
 Obtain a list of courses:
 
@@ -67,66 +66,28 @@ Fetch a single course by id:
       => #<Thinkwell::Hippo::Model::Course>
 
 
-### Containers
+### Course Tree
 
-Containers are used to organize a course tree.
+Each course has a course tree.  A course tree is a tree of nodes, where the
+branches represent containers/chapters, and the leaves are content (video, lecture notes, etc).
 
-Containers *contain something*.  Hippo has two types of
-containers: **container containers** and **content containers** (confused
-yet?).  Container containers contain an ordered list of one or more other
-containers.  Content containers contain a reference to one piece of content.
-The type of container is defined by the
-`Thinkwell::Hippo::Model::Container` object's `type` property, which will
-either be `container` or `content`.
+Hippo has two types of nodes: container nodes and content nodes.  The type
+of node is defined by the `Thinkwell::Hippo::Model::Node` object's `type`
+property, which will either be `container` or `content`.  Container nodes contain
+child nodes.  Content nodes point to a hippo content object.
 
+Child nodes are accessed via the `child_nodes` property.
 
-Return *all* containers in a given course.  This will return a single
-`Thinkwell::Hippo::Container` object representing the course's root
-container.  You can use the `descendants` method to return a flat array
-representing a depth-first tree of all containers.
+Fetch the course tree for a given course.  This will return a single
+`Thinkwell::Hippo::CourseTree` object representing the course's tree.
+You can use the `child_nodes` method to return a hierarchical array of nodes.
 
-    container = hippo.container(course.id)
-      => #<Thinkwell::Hippo::Model::Container>
-    container.descendants.count
-      => 1057
-
-
-Return a specific container with no descendants:
-
-    container = hippo.container(course.id, '4de8131599cf2b60fa000008', :depth => 0)
-      => #<Thinkwell::Hippo::Model::Container>
-    container.descendants.count
-      => 0
-
-
-Return the children for a specific container:
-
-    containers = hippo.containerChildren(course.id, '4de8131599cf2b60fa000008')
-      => [#<Thinkwell::Hippo::Model::Container>, #<Thinkwell::Hippo::Model::Container>, ...]
-
-
-Return the descendants for a specific container.  This will return a flat array
-representing a depth-first tree of all descendant containers.
-
-    containers = hippo.containerDescendants(course.id, '4de8131599cf2b60fa000008')
-      => [#<Thinkwell::Hippo::Model::Container>, #<Thinkwell::Hippo::Model::Container>, ...]
-
-
-Return only content containers:
-
-    containers = hippo.containerChildren(course.id, '4de8131599cf2b60fa000008', :type => :content)
-      => [#<Thinkwell::Hippo::Model::Container>, #<Thinkwell::Hippo::Model::Container>, ...]
-
-
-Sometimes it is helpful to fetch a list of content containers with an embedded
-reference to their parent containers.  The `containerContent` method will return an
-array of content containers, pre-hydrated with a special `parent_container` attribute
-containing the parent container.
-
-    containers = hippo.containerContent(course.id, '4de8131599cf2b60fa000008')
-      => [#<Thinkwell::Hippo::Model::Container>, #<Thinkwell::Hippo::Model::Container>, ...]
-    containers.first.parent_container
-      => #<Thinkwell::Hippo::Model::Container>
+    tree = hippo.course_tree(course.id)
+      => #<Thinkwell::Hippo::Model::CourseTree>
+    tree.child_nodes.count
+      => 10
+    tree.child_nodes[0].child_nodes.count
+      => 3
 
 
 ### Content

@@ -19,19 +19,16 @@
       x-ua-compatible: 
       - IE=Edge
       etag: 
-      - "\"04991ec5341e74b816165ccbddeaa24a\""
+      - "\"9d6441dd3d087a0e780a198fafa695aa\""
       content-type: 
       - application/json; charset=utf-8
       date: 
-      - Wed, 31 Aug 2011 14:37:56 GMT
+      - Thu, 17 Nov 2011 18:25:03 GMT
       x-runtime: 
-      - "0.484854"
-      set-cookie: 
-      - _hippo_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlNDk4OWI3YmE2MGY1OTliMzM5YjhhYzBkYThiNGI3NDE%3D--b0f4273e1201977351c02499a2f7222e6882c7ae; path=/; HttpOnly
+      - "0.216041"
       cache-control: 
       - max-age=0, private, must-revalidate
       status: 
       - 200 OK
-    body: "[{\"id\":\"4d76a704f7764853be000001\",\"default_course_id\":\"4d76a706f7764853be000003\",\"mapleta_parent_id\":5,\"name\":\"Calculus\"},{\"id\":\"4dee712af776482745000001\",\"default_course_id\":\"4dee712bf776482745000003\",\"mapleta_parent_id\":6,\"name\":\"College Algebra\"}]"
+    body: "[{\"id\":\"4d76a704f7764853be000001\",\"courses\":[{\"id\":\"4d76a706f7764853be000003\",\"changelog\":null,\"created_at\":\"2011-03-07T18:00:00-06:00\",\"name\":\"Calculus\",\"theme\":null,\"product_id\":\"4d76a704f7764853be000001\"}],\"created_at\":\"2011-03-07T18:00:00-06:00\",\"default_course_id\":\"4d76a706f7764853be000003\",\"mapleta_parent_id\":5,\"name\":\"Calculus\",\"updated_at\":\"2011-11-17T00:37:22-06:00\"},{\"id\":\"4dee712af776482745000001\",\"courses\":[{\"id\":\"4dee712bf776482745000003\",\"changelog\":null,\"created_at\":\"2011-06-06T19:00:00-05:00\",\"name\":\"College Algebra\",\"theme\":null,\"product_id\":\"4dee712af776482745000001\"},{\"id\":\"4ea712787fd4eff455000002\",\"changelog\":null,\"created_at\":\"2011-10-24T19:00:00-05:00\",\"name\":\"College Algebra 2nd Edition\",\"theme\":null,\"product_id\":\"4dee712af776482745000001\"}],\"created_at\":\"2011-06-06T19:00:00-05:00\",\"default_course_id\":\"4dee712bf776482745000003\",\"mapleta_parent_id\":6,\"name\":\"College Algebra\",\"updated_at\":\"2011-11-17T00:37:22-06:00\"}]"
     http_version: "1.1"
-  "@ignored": false
