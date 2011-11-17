@@ -61,22 +61,10 @@ Filter by product id:
       => [#<Thinkwell::Hippo::Model::Course>, #<Thinkwell::Hippo::Model::Course>, ...]
 
 
-Fetch the most recent version of a single course by id:
+Fetch a single course by id:
 
     course = hippo.course('4de8131599cf2b60fa000003')
       => #<Thinkwell::Hippo::Model::Course>
-
-
-Fetch a specific version of a single course by id:
-
-    course = hippo.course('4de8131599cf2b60fa000003', :version => 1)
-      => #<Thinkwell::Hippo::Model::Course>
-
-
-See available versions of a specific course:
-
-    courses = hippo.courseVersions('4de8131599cf2b60fa000003')
-      => [#<Thinkwell::Hippo::Model::Course>, #<Thinkwell::Hippo::Model::Course>]
 
 
 ### Containers

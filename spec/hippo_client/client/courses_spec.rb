@@ -36,14 +36,5 @@ describe Hippo::Client do
     end
   end
 
-  describe "courseVersions" do
-    use_vcr_cassette
-    it "returns an array of course versions" do
-      versions = @client.courseVersions(TEST_COURSE_ID)
-      versions.should be_a Array
-      versions[0].should be_a Hippo::Model::Course
-    end
-  end
-
 end
 end

@@ -15,10 +15,6 @@ module Thinkwell::Hippo
         hydrate :Course, fetch("courses/#{courseId}", opts)
       end
 
-      def courseVersions(courseId)
-        hydrate :Course, fetch("courses/#{courseId}/versions")
-      end
-
     end
   end
 end
