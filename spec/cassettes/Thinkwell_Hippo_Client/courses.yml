@@ -1,67 +1,77 @@
 --- 
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
-    method: :get
+recorded_with: VCR 2.0.0.beta2
+http_interactions: 
+- request: 
+    method: get
     uri: http://localhost:3000/courses.json
-    body: 
+    body: ""
     headers: 
-      accept: 
+      X-Api-Timestamp: 
+      - "1322008310"
+      Accept: 
       - application/json
-      x-api-key: 
+      X-Api-Signature: 
+      - e43022e383dd96740c668a05f16e25fc
+      X-Api-Key: 
       - 4d26276a99cf2b1291000001
-      x-api-timestamp: !ruby/regexp /^[0-9]{10}$/
-      x-api-signature: !ruby/regexp /^[0-9a-f]{32}$/
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: 
+    status: 
       code: 200
       message: OK
     headers: 
-      x-ua-compatible: 
+      Status: 
+      - 200 OK
+      X-Ua-Compatible: 
       - IE=Edge
-      etag: 
+      Etag: 
       - "\"80082563412d582d2d984edd81296a28\""
-      content-type: 
+      Content-Type: 
       - application/json; charset=utf-8
-      x-runtime: 
-      - "0.225200"
-      date: 
-      - Thu, 17 Nov 2011 18:25:02 GMT
-      status: 
-      - 200 OK
-      cache-control: 
+      Date: 
+      - Wed, 23 Nov 2011 00:31:50 GMT
+      X-Runtime: 
+      - "0.178689"
+      Cache-Control: 
       - max-age=0, private, must-revalidate
+      Connection: 
+      - close
     body: "[{\"id\":\"4d76a706f7764853be000003\",\"changelog\":null,\"created_at\":\"2011-03-07T18:00:00-06:00\",\"name\":\"Calculus\",\"theme\":null,\"product_id\":\"4d76a704f7764853be000001\"},{\"id\":\"4dee712bf776482745000003\",\"changelog\":null,\"created_at\":\"2011-06-06T19:00:00-05:00\",\"name\":\"College Algebra\",\"theme\":null,\"product_id\":\"4dee712af776482745000001\"},{\"id\":\"4ea712787fd4eff455000002\",\"changelog\":null,\"created_at\":\"2011-10-24T19:00:00-05:00\",\"name\":\"College Algebra 2nd Edition\",\"theme\":null,\"product_id\":\"4dee712af776482745000001\"}]"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
-    method: :get
+    http_version: 
+  recorded_at: Wed, 23 Nov 2011 00:31:50 GMT
+- request: 
+    method: get
     uri: http://localhost:3000/courses.json?product=4d76a704f7764853be000001
-    body: 
+    body: ""
     headers: 
-      accept: 
+      X-Api-Timestamp: 
+      - "1322008310"
+      Accept: 
       - application/json
-      x-api-key: 
+      X-Api-Signature: 
+      - e43022e383dd96740c668a05f16e25fc
+      X-Api-Key: 
       - 4d26276a99cf2b1291000001
-      x-api-timestamp: !ruby/regexp /^[0-9]{10}$/
-      x-api-signature: !ruby/regexp /^[0-9a-f]{32}$/
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: 
+    status: 
       code: 200
       message: OK
     headers: 
-      x-ua-compatible: 
-      - IE=Edge
-      etag: 
-      - "\"bb7fc15bdcf2672f2353b58de336e5d5\""
-      content-type: 
-      - application/json; charset=utf-8
-      date: 
-      - Thu, 17 Nov 2011 18:25:02 GMT
-      x-runtime: 
-      - "0.178115"
-      cache-control: 
-      - max-age=0, private, must-revalidate
-      status: 
+      Status: 
       - 200 OK
+      X-Ua-Compatible: 
+      - IE=Edge
+      Etag: 
+      - "\"bb7fc15bdcf2672f2353b58de336e5d5\""
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Wed, 23 Nov 2011 00:31:51 GMT
+      X-Runtime: 
+      - "0.172775"
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Connection: 
+      - close
     body: "[{\"id\":\"4d76a706f7764853be000003\",\"changelog\":null,\"created_at\":\"2011-03-07T18:00:00-06:00\",\"name\":\"Calculus\",\"theme\":null,\"product_id\":\"4d76a704f7764853be000001\"}]"
-    http_version: "1.1"
+    http_version: 
+  recorded_at: Wed, 23 Nov 2011 00:31:51 GMT

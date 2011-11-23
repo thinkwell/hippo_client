@@ -20,19 +20,7 @@ module Thinkwell::Hippo
       uri = URI.parse("#{options['url']}/#{method}#{format.nil? ? '' : ".#{format}"}")
       uri.query = params.to_query unless params.empty?
 
-      request = Net::HTTP::Get.new(uri.request_uri)
-      request['accept'] = 'application/json'
-      JohnHancock::Signature.sign!(options['signature']['algorithm'], request, options['signature']['options'] || {})
-
-      http = Net::HTTP.new(uri.host, uri.port)
-      http.use_ssl = true if uri.scheme == 'https'
-
-      begin
-        response = http.request(request)
-      rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, Errno::ECONNREFUSED, EOFError,
-             Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
-        raise Errors::NetworkError, e
-      end
+      response = fetch_uri(uri)
 
       if response.code.to_i != 200
         # TODO: Throw a better exception
@@ -45,6 +33,40 @@ module Thinkwell::Hippo
       else
         response.body
       end
+    end
+
+    private
+
+    def fetch_uri(uri, redirect_limit=5)
+      raise Errors::NetworkError.new(nil, 'Too many redirects') if redirect_limit == 0
+
+      uri = URI.parse(uri) unless uri.is_a?(URI)
+      request = Net::HTTP::Get.new(uri.request_uri)
+      request['accept'] = 'application/json'
+      if sign_uri?(uri)
+        JohnHancock::Signature.sign!(options['signature']['algorithm'], request, options['signature']['options'] || {})
+      end
+
+      http = Net::HTTP.new(uri.host, uri.port)
+      http.use_ssl = true if uri.scheme == 'https'
+
+      begin
+        response = http.request(request)
+      rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, Errno::ECONNREFUSED, EOFError,
+             Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
+        raise Errors::NetworkError, e
+      end
+
+      if response.is_a?(Net::HTTPRedirection)
+        response = fetch_uri(response['location'], redirect_limit - 1)
+      end
+
+      response
+    end
+
+    def sign_uri?(request_uri)
+      api_uri = URI.parse(options['url'])
+      request_uri.host == api_uri.host
     end
   end
 end

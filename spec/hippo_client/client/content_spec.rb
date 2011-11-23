@@ -26,6 +26,12 @@ describe Hippo::Client do
       content = @client.contentView(TEST_COURSE_ID, TEST_CONTENT_ID)
       content.should be_a String
     end
+
+    it "follows redirects" do
+      content = @client.contentView(TEST_COURSE_ID, TEST_CONTENT_ID, 'html', :template => 'transcript')
+      content.should be_a String
+      content.should =~ /<h3>An Introduction to Calculus/
+    end
   end
 end
 end
