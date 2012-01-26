@@ -1,7 +1,7 @@
 source "http://gem.thinkwell.com"
 source "http://rubygems.org"
 
-gem "john-hancock", '~> 0.0.4'
+gem "john-hancock", '>= 0.0.6'
 gem "json"
 gem "activesupport"
 
