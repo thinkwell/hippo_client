@@ -7,7 +7,7 @@ require 'hippo_client'
 
 TEST_PRODUCT_ID = '4d76a704f7764853be000001'
 TEST_COURSE_ID  = '4d76a706f7764853be000003'
-TEST_COURSE_TREE_ID = '4ecc221d043260118e000002'
+TEST_COURSE_TREE_ID = '4ecd35f18ed7df6f06000002'
 TEST_CONTENT_ID = '4d76a707f7764853be00000b'
 
 # Requires supporting files with custom matchers and macros, etc,

@@ -7,47 +7,47 @@ http_interactions:
     body: ""
     headers: 
       X-Api-Timestamp: 
-      - "1322008308"
+      - "1327605981"
       Accept: 
       - application/json
-      X-Api-Signature: 
-      - aff7bf432be535aff48dab8f50924edd
       X-Api-Key: 
       - 4d26276a99cf2b1291000001
+      X-Api-Signature: 
+      - e8722f8c056627dfb348a0d5a32f0938
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      Status: 
-      - 200 OK
-      X-Ua-Compatible: 
-      - IE=Edge
-      Etag: 
-      - "\"3efc28f8080b6b959434e93493a38550\""
       Content-Type: 
       - text/html; charset=utf-8
-      Date: 
-      - Wed, 23 Nov 2011 00:31:48 GMT
-      X-Runtime: 
-      - "0.358826"
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
+      X-Ua-Compatible: 
+      - IE=Edge
       Connection: 
       - close
+      Etag: 
+      - "\"4d321a856c44c91f322353d55bdc8c05\""
+      X-Runtime: 
+      - "0.386380"
+      Date: 
+      - Thu, 26 Jan 2012 19:26:22 GMT
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Status: 
+      - 200 OK
     body: |
-      <div style="width: 640px; height: 455px;" class="twvideoplayer" id="video-1322008308410772">&nbsp;</div>
+      <div style="width: 640px; height: 455px;" class="twvideoplayer" id="video-1327605982106279">&nbsp;</div>
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
       <script type="text/javascript">
       /* <![CDATA[ */
       swfobject.embedSWF(
           'http://thinkwell.cachefly.net/player/TWPlayer_1.0.swf',
-          'video-1322008308410772',
+          'video-1327605982106279',
           '640',
           '455',
           '8',
           '', 
-          {"width":640,"height":425,"fullScreen":false,"C":"000cd000a300093000d7000a80009e000b600085000de000a10009a0006200090000e4000bf000da0006e0005400092000b700098000ab000a1000da000a90008b00091000940009e000ae000cb000970008d000c8000a90009c000bb00061000dd000970009a0005400078000e2000ba000de0009900088000d7000a8000940007100098000e7000a20008f000970008d000e4000b4000d7000990006200094000760006200074000630009f0006a000590005800060000ab000ad000cb000980009a000d5000af0006d000a30007b000c100062000890006900097000e6000970009d0009800058000c7000bc000650007200094000b60009e0009b000860005b000d4000b7000cc0007b0009c000d80009c000620007b000a70009e000960008c0008700089000d1000810009e000670005a000c900078000690007400095000d50006200088000590008c000a7000b1000a2000990008a00098000a900064000770006a000a1000970008b000540008b000df000b9000de0009900093000d7000720009c000a700096000e3000a7000980008a0009b0009f000ae000cb000a00005400089000b900099000a600098000de0008400095000940009c000ad000b3000de000a8000950009d000720005f000b60009b000d8000a0000910009c0008d000dc000b7000980009700086000c6000ab00095000a80009f000e800060000940008a0009c0009f0009b000dc000a300099000c8000a6000a4000a7000970009e000970009e0009500091000e2000b0000de0009d00092000c800080000610007500065000a100062000560005d0005b000a300083000a50009600086000c7000b8000a2000ae00070000d00007a00078000550008b000b4000ba000e00008000058000c70007600094000bb000680009f000930006d000910009d000d10007e000ce000a000087000aa000ba000a50009b00065000a8000a600055000890008e000d2000ac000cb0006a00059000960007800096000770006c000a1000940008c000550008a000a4000af000a10009a0005d000c8000a800065000a800067000a400069000580008a0008d0009f000ae000d9000a200099000c8000b1000a4000710009f000d4000950009a0009a0009a000d5000be000990009700086000cf00072000620007300067000a4000610004c0009500089000e4000b3000a7000660005600097000780005f0007400064000a300067000850005600056000e8000b8000d60005a00087000d8000a900096000a7000a5000bf000950009a000620005900096000b4000d80009d00099000cc000a40009c00095000a7000d0000a60008b0006200098000dc000ac000e30005a00098000cb000b2000a70008e000a2000d0000960008f000930008f000bd000b0000dd000a700086000ca000a80006d000b6000a5000e4000970004c000890008d000d6000ac000df000a000099000b9000b20009c000b7000a0000d40006f0005b00055"},
+          {"width":640,"height":425,"fullScreen":false,"C":"000cd000a300093000d7000a80009e000b600085000de000a10009a0006200090000e4000bf000da0006e0005400092000b700098000ab000a1000da000a90008b00091000940009e000ae000cb000970008d000c8000a90009c000bb00061000dd000970009a0005400078000e2000ba000de0009900088000d7000a8000940007100098000e7000a20008f000970008d000e4000b4000d7000990006200094000760006200079000690009f0006800056000560005a000ab000ad000cb000980009a000d5000af0006d000a30007b000c100062000890006900097000e6000970009d0009800058000c7000bc000650007200094000b60009e0009b000860005b000d4000b7000cc0007b0009c000d80009c000620007b000a70009e0006a00087000550005e000a50007e000a0000650008a0009a000a600063000a400064000a200096000570005b0005a000a3000af000a20009600088000c5000a8000670007300067000a4000620008a000540008b000df000b9000de0009900093000d7000720009c000a700096000e3000a7000980008a0009b0009f000ae000cb000a00005400089000b900099000a600098000de0008400095000940009c000ad000b3000de000a8000950009d000720005f000b60009b000d8000a0000910009c0008d000dc000b7000980009700086000c6000ab00095000a80009f000e800060000940008a0009c0009f0009b000dc000a300099000c8000a6000a4000a7000970009e000970009e0009500091000e2000b0000de0009d00092000c800080000610007500065000a600068000560005b00058000a10007d000a50009600086000c7000b8000a2000ae00070000d00007a00078000550008b000b4000ba000e00008000058000c70007600094000bb000680009f000930006d000910009d000d10007e000ce000a000087000aa000ba000a50009b00065000a8000a6000550005d00089000a0000810009f000670005b00094000a800067000a500066000d100063000590008900059000a60007d0009d000980005d000c5000a600092000a70006a000a0000660005b000550008c0009f000ae000d9000a200099000c8000b1000a4000710009f000d4000950009a0009a0009a000d5000be000990009700086000cf00072000620007300067000a4000610004c0009500089000e4000b3000a7000660005600097000780005f0007400064000a300067000850005600056000e8000b8000d60005a00087000d8000a900096000a7000a5000bf000950009a000620005900096000b4000d80009d00099000cc000a40009c00095000a7000d0000a60008b0006200098000dc000ac000e30005a00098000cb000b2000a70008e000a2000d0000960008f000930008f000bd000b0000dd000a700086000ca000a80006d000b6000a5000e4000970004c000890008d000d6000ac000df000a000099000b9000b20009c000b7000a0000d40006f0005b00055"},
           {menu: false, wmode: 'opaque', scale: 'showall', salign: 't', bgcolor: '#FFFFFF'},
           {},
           function(e) {
@@ -73,47 +73,47 @@ http_interactions:
       </script>
 
     http_version: 
-  recorded_at: Wed, 23 Nov 2011 00:31:48 GMT
+  recorded_at: Thu, 26 Jan 2012 19:26:22 GMT
 - request: 
     method: get
     uri: http://localhost:3000/courses/4d76a706f7764853be000003/content/4d76a707f7764853be00000b/view.html?template=transcript
     body: ""
     headers: 
       X-Api-Timestamp: 
-      - "1322008308"
+      - "1327605982"
       Accept: 
       - application/json
-      X-Api-Signature: 
-      - aff7bf432be535aff48dab8f50924edd
       X-Api-Key: 
       - 4d26276a99cf2b1291000001
+      X-Api-Signature: 
+      - d7ac971bd11e24ac4d6a83e4b5f7ab87
   response: 
     status: 
       code: 302
       message: Found
     headers: 
-      Status: 
-      - 302 Found
-      X-Ua-Compatible: 
-      - IE=Edge
       Location: 
-      - http://thinkwell.cachefly.net/Protected/expiretime=1322008339;badurl=aHR0cDovL3d3dy50aGlua3dlbGwuY29t/e1ced0dabaaad8c088d094923f649d23/content/notes/html/cal/2029.html
+      - http://thinkwell.cachefly.net/Protected/expiretime=1327606012;badurl=aHR0cDovL3d3dy50aGlua3dlbGwuY29t/8a065361e7c3b13d1623d8bcbe71450d/content/notes/html/cal/2029.html
       Content-Type: 
       - text/html; charset=utf-8
-      Date: 
-      - Wed, 23 Nov 2011 00:31:49 GMT
-      X-Runtime: 
-      - "0.356683"
-      Cache-Control: 
-      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
       Connection: 
       - close
-    body: <html><body>You are being <a href="http://thinkwell.cachefly.net/Protected/expiretime=1322008339;badurl=aHR0cDovL3d3dy50aGlua3dlbGwuY29t/e1ced0dabaaad8c088d094923f649d23/content/notes/html/cal/2029.html">redirected</a>.</body></html>
+      X-Runtime: 
+      - "0.388321"
+      Date: 
+      - Thu, 26 Jan 2012 19:26:22 GMT
+      Cache-Control: 
+      - no-cache
+      Status: 
+      - 302 Found
+    body: <html><body>You are being <a href="http://thinkwell.cachefly.net/Protected/expiretime=1327606012;badurl=aHR0cDovL3d3dy50aGlua3dlbGwuY29t/8a065361e7c3b13d1623d8bcbe71450d/content/notes/html/cal/2029.html">redirected</a>.</body></html>
     http_version: 
-  recorded_at: Wed, 23 Nov 2011 00:31:49 GMT
+  recorded_at: Thu, 26 Jan 2012 19:26:22 GMT
 - request: 
     method: get
-    uri: http://thinkwell.cachefly.net:80/Protected/expiretime=1322008339;badurl=aHR0cDovL3d3dy50aGlua3dlbGwuY29t/e1ced0dabaaad8c088d094923f649d23/content/notes/html/cal/2029.html
+    uri: http://thinkwell.cachefly.net:80/Protected/expiretime=1327606012;badurl=aHR0cDovL3d3dy50aGlua3dlbGwuY29t/8a065361e7c3b13d1623d8bcbe71450d/content/notes/html/cal/2029.html
     body: ""
     headers: 
       Accept: 
@@ -123,30 +123,28 @@ http_interactions:
       code: 200
       message: OK
     headers: 
-      Last-Modified: 
-      - Fri, 04 Nov 2011 18:33:26 GMT
-      Etag: 
-      - "\"36b45572b463d2ab44ceea348066a9ad\""
-      Content-Type: 
-      - text/html
+      Server: 
+      - CacheFlyServe v26b
       X-Cf1: 
-      - fI.ord1:cf:cacheJ.ord1-01
-      Date: 
-      - Wed, 23 Nov 2011 00:31:49 GMT
-      Content-Disposition: 
-      - filename=2029.html
+      - dD.fra1:cf:cacheC.fra1-01
+      X-Cf2: 
+      - L
       Content-Length: 
       - "4360"
-      X-C4: 
-      - HIT
-      Server: 
-      - CFServ v54
-      X-Cf3: 
-      - L
-      Accept-Ranges: 
-      - bytes
+      Content-Type: 
+      - text/html
       Connection: 
       - keep-alive
+      Etag: 
+      - "\"36b45572b463d2ab44ceea348066a9ad\""
+      Last-Modified: 
+      - Fri, 04 Nov 2011 18:33:26 GMT
+      Date: 
+      - Thu, 26 Jan 2012 19:26:23 GMT
+      Accept-Ranges: 
+      - bytes
+      Content-Disposition: 
+      - filename=2029.html
     body: "<h3>An Introduction to Calculus - Transcript</h3>\n\n\
       <p><span class=\"transcript_navigation\" time=\"0\">Play from here &gt; </span> Hi!  And welcome to our studios.  I\xE2\x80\x99m Professor Edward Burger, professor of mathematics at Williams College, and I\xE2\x80\x99d like to welcome you to this really interesting, new, and an innovative environment for learning.  What we\xE2\x80\x99re going to do is we are going to actually turn things around and try to make calculus interesting, calculus understandable, and calculus fun.  Now, you know, a lot of you, in fact, I\xE2\x80\x99m hoping that you actually have a calculus book, it might look something like this, here\xE2\x80\x99s one, gee, it\xE2\x80\x99s a little heavy.  Here it is.  This one\xE2\x80\x99s called \xE2\x80\x9CCalculus, Math to Pump You Up\xE2\x80\x9D.  Well, the only pumping that I think this book is going to do is if you actually use it like this and bring it to the weight room because it\xE2\x80\x99s so heavy, it\xE2\x80\x99s so big.  Maybe your book is just as big as this; maybe it\xE2\x80\x99s even bigger, I don\xE2\x80\x99t know.</p>\n\n\
       <p><span class=\"transcript_navigation\" time=\"60\">Play from here &gt; </span> Have you read your book, by the way?  Well, it would be great if you read it, seriously, but I\xE2\x80\x99ll let you in on a little secret.  I think most people don\xE2\x80\x99t read this book, and, in fact, I\xE2\x80\x99ll let you in on a bigger secret.  When I took calculus, I didn\xE2\x80\x99t read the book, but don\xE2\x80\x99t tell people.  Anyway, the point is this is so cold and dry and filled with theorems and proofs and all sorts of stuff, and usually, what folks do is just run right to the back of each section and try the problems and when they can\xE2\x80\x99t do the problem, they look at the worked out problems.  And it\xE2\x80\x99s hard to get a good understanding of what calculus is all about.</p>\n\n\
@@ -154,4 +152,4 @@ http_interactions:
       <p><span class=\"transcript_navigation\" time=\"240\">Play from here &gt; </span> Okay, now, what\xE2\x80\x99s going on here though, is we\xE2\x80\x99ve created an environment where we are going to interact with each other.  So, I\xE2\x80\x99ll talk about stuff and then we\xE2\x80\x99ll actually have an opportunity for you to try something, and for you to get your hands dirty and try a problem, or try a question, and then we\xE2\x80\x99ll talk about it and get some feed back with each other.  Now you\xE2\x80\x99ll notice right over here there\xE2\x80\x99s another white right rectangle and that\xE2\x80\x99s the place where I\xE2\x80\x99ll actually sort of write things in if I want something to be there for you to see.  I\xE2\x80\x99ll put it; for example, I\xE2\x80\x99m not going to say, you know, calculus is cool.  There you see.  And I want to say, math isn\xE2\x80\x99t as awful as you may think.  Hear me?  So we use that a lot and that\xE2\x80\x99s basically what we\xE2\x80\x99re all about here.  The actual set is going to be, when we actually lecture, there\xE2\x80\x99ll be a table here.  I\xE2\x80\x99ll be writing on the table and you\xE2\x80\x99ll be able to see what I\xE2\x80\x99m writing, and this is our set.  Do you like our set back here, it\xE2\x80\x99s sort of blue, not very exciting, but there\xE2\x80\x99s a lot of possibilities, a lot of opportunities, and we\xE2\x80\x99ll have fun with it.   \n\
       For example, suppose I want to tell you the weather.  Now you see, there it is, and you can see Massachusetts.  It\xE2\x80\x99s beautiful, that\xE2\x80\x99s where I\xE2\x80\x99m from.  Maybe you want to actually go and to take a look at the moon.  Well, there\xE2\x80\x99s a moon shot.  Textbooks can\xE2\x80\x99t do that.  It\xE2\x80\x99s going to be virtual.  It\xE2\x80\x99s going to be now, and I hope you are going to really enjoy it.  So, I want you to stay with us and I hope you have some fun.  Thanks.</p>"
     http_version: 
-  recorded_at: Wed, 23 Nov 2011 00:31:49 GMT
+  recorded_at: Thu, 26 Jan 2012 19:26:23 GMT

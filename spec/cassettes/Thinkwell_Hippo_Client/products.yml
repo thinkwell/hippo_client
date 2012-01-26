@@ -7,34 +7,34 @@ http_interactions:
     body: ""
     headers: 
       X-Api-Timestamp: 
-      - "1322008311"
+      - "1327605986"
       Accept: 
       - application/json
-      X-Api-Signature: 
-      - 1d429c54b116e5996d4ec22c060cea0f
       X-Api-Key: 
       - 4d26276a99cf2b1291000001
+      X-Api-Signature: 
+      - 508c06bd72d4b565542b10cee36e9808
   response: 
     status: 
       code: 200
       message: OK
     headers: 
-      Status: 
-      - 200 OK
-      X-Ua-Compatible: 
-      - IE=Edge
-      Etag: 
-      - "\"849f23a44d673e9e7bce2945fb208e1b\""
       Content-Type: 
       - application/json; charset=utf-8
-      Date: 
-      - Wed, 23 Nov 2011 00:31:51 GMT
-      X-Runtime: 
-      - "0.171830"
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
+      X-Ua-Compatible: 
+      - IE=Edge
       Connection: 
       - close
-    body: "[{\"id\":\"4d76a704f7764853be000001\",\"courses\":[{\"id\":\"4d76a706f7764853be000003\",\"changelog\":null,\"created_at\":\"2011-03-07T18:00:00-06:00\",\"name\":\"Calculus\",\"theme\":null,\"product_id\":\"4d76a704f7764853be000001\"}],\"created_at\":\"2011-03-07T18:00:00-06:00\",\"default_course_id\":\"4d76a706f7764853be000003\",\"mapleta_parent_id\":5,\"name\":\"Calculus\",\"updated_at\":\"2011-11-22T16:28:45-06:00\"},{\"id\":\"4dee712af776482745000001\",\"courses\":[{\"id\":\"4dee712bf776482745000003\",\"changelog\":null,\"created_at\":\"2011-06-06T19:00:00-05:00\",\"name\":\"College Algebra\",\"theme\":null,\"product_id\":\"4dee712af776482745000001\"},{\"id\":\"4ea712787fd4eff455000002\",\"changelog\":null,\"created_at\":\"2011-10-24T19:00:00-05:00\",\"name\":\"College Algebra 2nd Edition\",\"theme\":null,\"product_id\":\"4dee712af776482745000001\"}],\"created_at\":\"2011-06-06T19:00:00-05:00\",\"default_course_id\":\"4dee712bf776482745000003\",\"mapleta_parent_id\":6,\"name\":\"College Algebra\",\"updated_at\":\"2011-11-22T16:28:45-06:00\"}]"
+      Etag: 
+      - "\"09b13899ddd7292118b626f2266851f8\""
+      X-Runtime: 
+      - "0.229051"
+      Date: 
+      - Thu, 26 Jan 2012 19:26:26 GMT
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Status: 
+      - 200 OK
+    body: "[{\"id\":\"4d76a704f7764853be000001\",\"courses\":[{\"id\":\"4d76a706f7764853be000003\",\"changelog\":null,\"created_at\":null,\"name\":\"Calculus\",\"theme\":null,\"product_id\":\"4d76a704f7764853be000001\"}],\"created_at\":\"2011-03-07T18:00:00-06:00\",\"default_course_id\":\"4d76a706f7764853be000003\",\"mapleta_parent_id\":5,\"name\":\"Calculus\",\"updated_at\":\"2012-01-24T14:26:05-06:00\"},{\"id\":\"4dee712af776482745000001\",\"courses\":[{\"id\":\"4dee712bf776482745000003\",\"changelog\":null,\"created_at\":\"2011-06-06T19:00:00-05:00\",\"name\":\"College Algebra\",\"theme\":null,\"product_id\":\"4dee712af776482745000001\"},{\"id\":\"4ea712787fd4eff455000002\",\"changelog\":null,\"created_at\":\"2011-10-24T19:00:00-05:00\",\"name\":\"College Algebra 2nd Edition\",\"theme\":null,\"product_id\":\"4dee712af776482745000001\"}],\"created_at\":\"2011-06-06T19:00:00-05:00\",\"default_course_id\":\"4dee712bf776482745000003\",\"mapleta_parent_id\":6,\"name\":\"College Algebra\",\"updated_at\":\"2011-11-23T12:05:37-06:00\"}]"
     http_version: 
-  recorded_at: Wed, 23 Nov 2011 00:31:51 GMT
+  recorded_at: Thu, 26 Jan 2012 19:26:26 GMT
