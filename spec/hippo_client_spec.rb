@@ -12,6 +12,23 @@ describe Hippo do
       Hippo.configure 'foo' => 'bar'
       Hippo.configuration.should == Hippo.default_options.merge({'foo' => 'bar'})
     end
+
+    it "sets signature options" do
+      opts = {
+        'signature' => {
+          'algorithm' => 'simple',
+          'options' => {
+            'key' => 'mykey',
+            'secret' => 'mysecret',
+            'key_header' => 'X-My-Key',
+            'signature_header' => 'X-My-Signature',
+            'timestamp_header' => 'X-My-Timestamp',
+          },
+        },
+      }
+      Hippo.configure opts
+      Hippo.configuration.should == Hippo.default_options.merge(opts)
+    end
   end
 
   describe "client" do
