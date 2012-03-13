@@ -1,155 +1,283 @@
---- 
-recorded_with: VCR 2.0.0.beta2
-http_interactions: 
-- request: 
+---
+http_interactions:
+- request:
     method: get
     uri: http://localhost:3000/courses/4d76a706f7764853be000003/content/4d76a707f7764853be00000b/view.html
-    body: ""
-    headers: 
-      X-Api-Timestamp: 
-      - "1327605981"
-      Accept: 
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
       - application/json
-      X-Api-Key: 
+      User-Agent:
+      - Ruby
+      X-Api-Key:
       - 4d26276a99cf2b1291000001
-      X-Api-Signature: 
-      - e8722f8c056627dfb348a0d5a32f0938
-  response: 
-    status: 
+      X-Api-Timestamp:
+      - '1331661731'
+      X-Api-Signature:
+      - !binary |-
+        NzU4Y2Q2ZDc4N2E1MTM3MDc4ZTIxZjg3OWUxOTZkYjU=
+  response:
+    status:
       code: 200
       message: OK
-    headers: 
-      Content-Type: 
-      - text/html; charset=utf-8
-      X-Ua-Compatible: 
-      - IE=Edge
-      Connection: 
-      - close
-      Etag: 
-      - "\"4d321a856c44c91f322353d55bdc8c05\""
-      X-Runtime: 
-      - "0.386380"
-      Date: 
-      - Thu, 26 Jan 2012 19:26:22 GMT
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Status: 
+    headers:
+      Date:
+      - Tue, 13 Mar 2012 18:02:11 GMT
+      Status:
       - 200 OK
-    body: |
-      <div style="width: 640px; height: 455px;" class="twvideoplayer" id="video-1327605982106279">&nbsp;</div>
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
-      <script type="text/javascript">
-      /* <![CDATA[ */
-      swfobject.embedSWF(
-          'http://thinkwell.cachefly.net/player/TWPlayer_1.0.swf',
-          'video-1327605982106279',
-          '640',
-          '455',
-          '8',
-          '', 
-          {"width":640,"height":425,"fullScreen":false,"C":"000cd000a300093000d7000a80009e000b600085000de000a10009a0006200090000e4000bf000da0006e0005400092000b700098000ab000a1000da000a90008b00091000940009e000ae000cb000970008d000c8000a90009c000bb00061000dd000970009a0005400078000e2000ba000de0009900088000d7000a8000940007100098000e7000a20008f000970008d000e4000b4000d7000990006200094000760006200079000690009f0006800056000560005a000ab000ad000cb000980009a000d5000af0006d000a30007b000c100062000890006900097000e6000970009d0009800058000c7000bc000650007200094000b60009e0009b000860005b000d4000b7000cc0007b0009c000d80009c000620007b000a70009e0006a00087000550005e000a50007e000a0000650008a0009a000a600063000a400064000a200096000570005b0005a000a3000af000a20009600088000c5000a8000670007300067000a4000620008a000540008b000df000b9000de0009900093000d7000720009c000a700096000e3000a7000980008a0009b0009f000ae000cb000a00005400089000b900099000a600098000de0008400095000940009c000ad000b3000de000a8000950009d000720005f000b60009b000d8000a0000910009c0008d000dc000b7000980009700086000c6000ab00095000a80009f000e800060000940008a0009c0009f0009b000dc000a300099000c8000a6000a4000a7000970009e000970009e0009500091000e2000b0000de0009d00092000c800080000610007500065000a600068000560005b00058000a10007d000a50009600086000c7000b8000a2000ae00070000d00007a00078000550008b000b4000ba000e00008000058000c70007600094000bb000680009f000930006d000910009d000d10007e000ce000a000087000aa000ba000a50009b00065000a8000a6000550005d00089000a0000810009f000670005b00094000a800067000a500066000d100063000590008900059000a60007d0009d000980005d000c5000a600092000a70006a000a0000660005b000550008c0009f000ae000d9000a200099000c8000b1000a4000710009f000d4000950009a0009a0009a000d5000be000990009700086000cf00072000620007300067000a4000610004c0009500089000e4000b3000a7000660005600097000780005f0007400064000a300067000850005600056000e8000b8000d60005a00087000d8000a900096000a7000a5000bf000950009a000620005900096000b4000d80009d00099000cc000a40009c00095000a7000d0000a60008b0006200098000dc000ac000e30005a00098000cb000b2000a70008e000a2000d0000960008f000930008f000bd000b0000dd000a700086000ca000a80006d000b6000a5000e4000970004c000890008d000d6000ac000df000a000099000b9000b20009c000b7000a0000d40006f0005b00055"},
-          {menu: false, wmode: 'opaque', scale: 'showall', salign: 't', bgcolor: '#FFFFFF'},
-          {},
-          function(e) {
-              if(e.success)
-              {
-                  // Fix bug in Firefox 4 where content isn't displayed until mouse
-                  // moves or focus changes
-                  var el = document.getElementById(e.id);
-                  if(el) {
-                    setTimeout(function() {
-                      el.focus();
-                      el.blur();
-                    }, 250);
-                  }
-              }
-              else
-              {
-                  document.getElementById(e.id).innerHTML = '<p>This content requires Adobe\'s <b>Flash Player 8 or higher</b>. Click on the link below to download and install the latest version of the <a href="http://get.adobe.com/flashplayer/"><b>Flash Player</b></a>.</p><p><a href="http://get.adobe.com/flashplayer/"><b>Click here</b></a> to download and install the latest <b>Flash Player</b>.</p>';
-              }
-          }
-      );
-      /* ]]> */
-      </script>
-
+      Connection:
+      - close
+      X-Csrf-Token:
+      - n2wl1hxKRE43lVXdzwD2NAcVxEI+2kut67QNeR0rgQA=
+      Content-Type:
+      - text/html; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"5a517777806ddd832f3b2b9e9bad11c2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _hippo_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWEwZmNlNjkxMWIyZWY5Njk4ZTU0MzVlZGIwOTNiYzZlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMW4yd2wxaHhLUkU0M2xWWGR6d0QyTkFjVnhFSSsya3V0NjdRTmVSMHJnUUE9BjsARg%3D%3D--da1db376875736e5c30d0153a0a26d60ce6df979;
+        path=/; HttpOnly
+      X-Request-Id:
+      - ef5189f9a94b6f4c4d7864e032534e1d
+      X-Runtime:
+      - '0.061250'
+    body:
+      encoding: US-ASCII
+      string: ! "<div style=\"width: 640px; height: 455px;\" class=\"twvideoplayer\"
+        id=\"video-1331661731462757\">&nbsp;</div>\n<script type=\"text/javascript\">\n/*
+        <![CDATA[ */\n(function(window) {\n  var loadJs, loadContent;\n\n  loadJs
+        = function(src, callback) {\n    var head, script, onLoad, old = window.swfobject;\n
+        \   onLoad = function() {\n      var swfobject = window.swfobject;\n      window.swfobject
+        = old;\n      callback.call(window, swfobject);\n    };\n\n    head = window.document.getElementsByTagName('head')[0];\n
+        \   script = window.document.createElement('script');\n    script.type = 'text/javascript';\n
+        \   script.onreadystatechange = function () {\n      if (window.readyState
+        === 'complete') { onLoad(); }\n    };\n    script.onload = onLoad;\n    script.src
+        = src;\n    head.appendChild(script);\n  };\n\n  loadContent = function(swfobject)
+        {\n    \nswfobject.embedSWF(\n    'http://thinkwell.cachefly.net/player/TWPlayer_1.0.swf',\n
+        \   'video-1331661731462757',\n    '640',\n    '455',\n    '8',\n    '', \n
+        \   {\"width\":640,\"height\":425,\"fullScreen\":false,\"C\":\"000cd000a300093000d7000a80009e000b600085000de000a10009a0006200090000e4000bf000da0006e0005400092000b700098000ab000a1000da000a90008b00091000940009e000ae000cb000970008d000c8000a90009c000bb00061000dd000970009a0005400078000e2000ba000de0009900088000d7000a8000940007100098000e7000a20008f000970008d000e4000b4000d700099000620009400076000630007300069000a5000630005d0005b00059000ab000ad000cb000980009a000d5000af0006d000a30007b000c100062000890006900097000e6000970009d0009800058000c7000bc000650007200094000b60009e0009b000860005b000d4000b7000cc0007b0009c000d80009c000620007b000a70009e000620008b000580008d000d2000ad0009e00065000590009b0007500091000a600098000d0000680008a0008b00061000a30007f0009f0009a0005c000c5000a4000680007800097000d4000980008c000540008b000df000b9000de0009900093000d7000720009c000a700096000e3000a7000980008a0009b0009f000ae000cb000a00005400089000b900099000a600098000de0008400095000940009c000ad000bd000de000a1000950009d000720005f000aa000a80009f00063000890009b0009a000d600079000dc000a800092000d3000ab0009f000b5000a70009d00095000950009200057000e4000b3000d3000a200090000da000a80009c000ae00062000db0009700089000990009d000e2000b0000dd0006300088000c4000af0005f0007400064000a300067000550004b00098000d1000bf000d200071000570009400077000650007100065000a0000660005b00084000590009e000c3000d7000a00004b000c5000b800096000a800098000e100082000890009900065000a100071000d3000a20008e000d7000ac00091000ae00086000e3000930009a0008a00065000e0000b7000cb000ad0004b000d6000ab0009f000b90007f000de000930008a0008e00096000d700098000cf000a700098000c4000aa000950007f000a7000e1000a70008b0004b0008c000d5000b1000cb000a900091000d7000990009f000ae000a8000dc00097000630005a00058\"},\n
+        \   {menu: false, wmode: 'opaque', scale: 'showall', salign: 't', bgcolor:
+        '#FFFFFF'},\n    {},\n    function(e) {\n        if(e.success)\n        {\n
+        \           // Fix bug in Firefox 4 where content isn't displayed until mouse\n
+        \           // moves or focus changes\n            var el = document.getElementById(e.id);\n
+        \           if(el) {\n              setTimeout(function() {\n                el.focus();\n
+        \               el.blur();\n              }, 250);\n            }\n        }\n
+        \       else\n        {\n            document.getElementById(e.id).innerHTML
+        = '<p>This content requires Adobe\\'s <b>Flash Player 8 or higher</b>. Click
+        on the link below to download and install the latest version of the <a href=\"http://get.adobe.com/flashplayer/\"><b>Flash
+        Player</b></a>.</p><p><a href=\"http://get.adobe.com/flashplayer/\"><b>Click
+        here</b></a> to download and install the latest <b>Flash Player</b>.</p>';\n
+        \       }\n    }\n);\n\n  };\n\n  if (typeof window.swfobject === 'object')
+        {\n    loadContent.call(window, window.swfobject);\n  } else {\n    loadJs(\"http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js\",
+        loadContent);\n  }\n}(window));\n/* ]]> */\n</script>\n"
     http_version: 
-  recorded_at: Thu, 26 Jan 2012 19:26:22 GMT
-- request: 
+  recorded_at: Tue, 13 Mar 2012 18:02:11 GMT
+- request:
     method: get
     uri: http://localhost:3000/courses/4d76a706f7764853be000003/content/4d76a707f7764853be00000b/view.html?template=transcript
-    body: ""
-    headers: 
-      X-Api-Timestamp: 
-      - "1327605982"
-      Accept: 
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
       - application/json
-      X-Api-Key: 
+      User-Agent:
+      - Ruby
+      X-Api-Key:
       - 4d26276a99cf2b1291000001
-      X-Api-Signature: 
-      - d7ac971bd11e24ac4d6a83e4b5f7ab87
-  response: 
-    status: 
+      X-Api-Timestamp:
+      - '1331661731'
+      X-Api-Signature:
+      - !binary |-
+        NzU4Y2Q2ZDc4N2E1MTM3MDc4ZTIxZjg3OWUxOTZkYjU=
+  response:
+    status:
       code: 302
       message: Found
-    headers: 
-      Location: 
-      - http://thinkwell.cachefly.net/Protected/expiretime=1327606012;badurl=aHR0cDovL3d3dy50aGlua3dlbGwuY29t/8a065361e7c3b13d1623d8bcbe71450d/content/notes/html/cal/2029.html
-      Content-Type: 
-      - text/html; charset=utf-8
-      X-Ua-Compatible: 
-      - IE=Edge
-      Connection: 
-      - close
-      X-Runtime: 
-      - "0.388321"
-      Date: 
-      - Thu, 26 Jan 2012 19:26:22 GMT
-      Cache-Control: 
-      - no-cache
-      Status: 
+    headers:
+      Date:
+      - Tue, 13 Mar 2012 18:02:11 GMT
+      Status:
       - 302 Found
-    body: <html><body>You are being <a href="http://thinkwell.cachefly.net/Protected/expiretime=1327606012;badurl=aHR0cDovL3d3dy50aGlua3dlbGwuY29t/8a065361e7c3b13d1623d8bcbe71450d/content/notes/html/cal/2029.html">redirected</a>.</body></html>
+      Connection:
+      - close
+      Location:
+      - http://thinkwell.cachefly.net/Protected/expiretime=1331661761;badurl=aHR0cDovL3d3dy50aGlua3dlbGwuY29t/0e3ebb41482adea6df9345f7ba86deff/content/notes/html/cal/2029.html
+      X-Csrf-Token:
+      - 3Oi+zAqwTpWovTOMJDae5Xexu64O9GWwYfl9+B0jiUc=
+      Content-Type:
+      - text/html; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _hippo_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTA5OWMzMDEyZDAwOGRkMGFlZmE0YjdlMTIyOWRlMDc1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTNPaSt6QXF3VHBXb3ZUT01KRGFlNVhleHU2NE85R1d3WWZsOStCMGppVWM9BjsARg%3D%3D--474d4cf71d0387401a17d857c410d412ad5649e2;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 6dba7f73c56bed3b7251492bdf258f3e
+      X-Runtime:
+      - '0.022614'
+    body:
+      encoding: US-ASCII
+      string: <html><body>You are being <a href="http://thinkwell.cachefly.net/Protected/expiretime=1331661761;badurl=aHR0cDovL3d3dy50aGlua3dlbGwuY29t/0e3ebb41482adea6df9345f7ba86deff/content/notes/html/cal/2029.html">redirected</a>.</body></html>
     http_version: 
-  recorded_at: Thu, 26 Jan 2012 19:26:22 GMT
-- request: 
+  recorded_at: Tue, 13 Mar 2012 18:02:11 GMT
+- request:
     method: get
-    uri: http://thinkwell.cachefly.net:80/Protected/expiretime=1327606012;badurl=aHR0cDovL3d3dy50aGlua3dlbGwuY29t/8a065361e7c3b13d1623d8bcbe71450d/content/notes/html/cal/2029.html
-    body: ""
-    headers: 
-      Accept: 
+    uri: http://thinkwell.cachefly.net/Protected/expiretime=1331661761;badurl=aHR0cDovL3d3dy50aGlua3dlbGwuY29t/0e3ebb41482adea6df9345f7ba86deff/content/notes/html/cal/2029.html
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
       - application/json
-  response: 
-    status: 
+      User-Agent:
+      - Ruby
+  response:
+    status:
       code: 200
-      message: OK
-    headers: 
-      Server: 
-      - CacheFlyServe v26b
-      X-Cf1: 
-      - dD.fra1:cf:cacheC.fra1-01
-      X-Cf2: 
-      - L
-      Content-Length: 
-      - "4360"
-      Content-Type: 
-      - text/html
-      Connection: 
-      - keep-alive
-      Etag: 
-      - "\"36b45572b463d2ab44ceea348066a9ad\""
-      Last-Modified: 
-      - Fri, 04 Nov 2011 18:33:26 GMT
-      Date: 
-      - Thu, 26 Jan 2012 19:26:23 GMT
-      Accept-Ranges: 
-      - bytes
-      Content-Disposition: 
-      - filename=2029.html
-    body: "<h3>An Introduction to Calculus - Transcript</h3>\n\n\
-      <p><span class=\"transcript_navigation\" time=\"0\">Play from here &gt; </span> Hi!  And welcome to our studios.  I\xE2\x80\x99m Professor Edward Burger, professor of mathematics at Williams College, and I\xE2\x80\x99d like to welcome you to this really interesting, new, and an innovative environment for learning.  What we\xE2\x80\x99re going to do is we are going to actually turn things around and try to make calculus interesting, calculus understandable, and calculus fun.  Now, you know, a lot of you, in fact, I\xE2\x80\x99m hoping that you actually have a calculus book, it might look something like this, here\xE2\x80\x99s one, gee, it\xE2\x80\x99s a little heavy.  Here it is.  This one\xE2\x80\x99s called \xE2\x80\x9CCalculus, Math to Pump You Up\xE2\x80\x9D.  Well, the only pumping that I think this book is going to do is if you actually use it like this and bring it to the weight room because it\xE2\x80\x99s so heavy, it\xE2\x80\x99s so big.  Maybe your book is just as big as this; maybe it\xE2\x80\x99s even bigger, I don\xE2\x80\x99t know.</p>\n\n\
-      <p><span class=\"transcript_navigation\" time=\"60\">Play from here &gt; </span> Have you read your book, by the way?  Well, it would be great if you read it, seriously, but I\xE2\x80\x99ll let you in on a little secret.  I think most people don\xE2\x80\x99t read this book, and, in fact, I\xE2\x80\x99ll let you in on a bigger secret.  When I took calculus, I didn\xE2\x80\x99t read the book, but don\xE2\x80\x99t tell people.  Anyway, the point is this is so cold and dry and filled with theorems and proofs and all sorts of stuff, and usually, what folks do is just run right to the back of each section and try the problems and when they can\xE2\x80\x99t do the problem, they look at the worked out problems.  And it\xE2\x80\x99s hard to get a good understanding of what calculus is all about.</p>\n\n\
-      <p><span class=\"transcript_navigation\" time=\"180\">Play from here &gt; </span> We want to turn that around.  What we want to do here is actually create an environment where we discuss the calculus, we explain it in simple easy to follow terms and really see that it\xE2\x80\x99s sort of an interesting endeavor, that there\xE2\x80\x99s a lot of sort of things that make a whole bunch of sense, and that it\xE2\x80\x99s actually sort of fun.  And also empower you with the ability to understand it and to also understand other things.  So, the difference is, what's the difference between what we are doing here and this.  Well, first of all, this is on the information super highway.  I\xE2\x80\x99m coming to you courtesy of technology.  I mean, I\xE2\x80\x99m coming over the airwaves and you\xE2\x80\x99re seeing me -- ju, ju, ju.  It\xE2\x80\x99s sort of fun, isn\xE2\x80\x99t it?  Well, I\xE2\x80\x99m sort of actually enjoying it, \xE2\x80\x98cause it gives me a tingle right down my spine, but that\xE2\x80\x99s another story.</p>\n\n\
-      <p><span class=\"transcript_navigation\" time=\"240\">Play from here &gt; </span> Okay, now, what\xE2\x80\x99s going on here though, is we\xE2\x80\x99ve created an environment where we are going to interact with each other.  So, I\xE2\x80\x99ll talk about stuff and then we\xE2\x80\x99ll actually have an opportunity for you to try something, and for you to get your hands dirty and try a problem, or try a question, and then we\xE2\x80\x99ll talk about it and get some feed back with each other.  Now you\xE2\x80\x99ll notice right over here there\xE2\x80\x99s another white right rectangle and that\xE2\x80\x99s the place where I\xE2\x80\x99ll actually sort of write things in if I want something to be there for you to see.  I\xE2\x80\x99ll put it; for example, I\xE2\x80\x99m not going to say, you know, calculus is cool.  There you see.  And I want to say, math isn\xE2\x80\x99t as awful as you may think.  Hear me?  So we use that a lot and that\xE2\x80\x99s basically what we\xE2\x80\x99re all about here.  The actual set is going to be, when we actually lecture, there\xE2\x80\x99ll be a table here.  I\xE2\x80\x99ll be writing on the table and you\xE2\x80\x99ll be able to see what I\xE2\x80\x99m writing, and this is our set.  Do you like our set back here, it\xE2\x80\x99s sort of blue, not very exciting, but there\xE2\x80\x99s a lot of possibilities, a lot of opportunities, and we\xE2\x80\x99ll have fun with it.   \n\
-      For example, suppose I want to tell you the weather.  Now you see, there it is, and you can see Massachusetts.  It\xE2\x80\x99s beautiful, that\xE2\x80\x99s where I\xE2\x80\x99m from.  Maybe you want to actually go and to take a look at the moon.  Well, there\xE2\x80\x99s a moon shot.  Textbooks can\xE2\x80\x99t do that.  It\xE2\x80\x99s going to be virtual.  It\xE2\x80\x99s going to be now, and I hope you are going to really enjoy it.  So, I want you to stay with us and I hope you have some fun.  Thanks.</p>"
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        Q0ZTIDEyMjg=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VHVlLCAxMyBNYXIgMjAxMiAxODowMjoxMSBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        dGV4dC9odG1s
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "Q29udGVudC1EaXNwb3NpdGlvbg==":
+      - !binary |-
+        ZmlsZW5hbWU9MjAyOS5odG1s
+      !binary "RXRhZw==":
+      - !binary |-
+        IjM2YjQ1NTcyYjQ2M2QyYWI0NGNlZWEzNDgwNjZhOWFkIg==
+      !binary "WC1DZjE=":
+      - !binary |-
+        Zkgub3JkMTpjZjpjYWNoZU4ub3JkMS0wMQ==
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        NDM2MA==
+      !binary "TGFzdC1Nb2RpZmllZA==":
+      - !binary |-
+        RnJpLCAwNCBOb3YgMjAxMSAxODozMzoyNiBHTVQ=
+      !binary "WC1DZjI=":
+      - !binary |-
+        TA==
+      !binary "QWNjZXB0LVJhbmdlcw==":
+      - !binary |-
+        Ynl0ZXM=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PGgzPkFuIEludHJvZHVjdGlvbiB0byBDYWxjdWx1cyAtIFRyYW5zY3JpcHQ8
+        L2gzPgoKPHA+PHNwYW4gY2xhc3M9InRyYW5zY3JpcHRfbmF2aWdhdGlvbiIg
+        dGltZT0iMCI+UGxheSBmcm9tIGhlcmUgJmd0OyA8L3NwYW4+IEhpISAgQW5k
+        IHdlbGNvbWUgdG8gb3VyIHN0dWRpb3MuICBJ4oCZbSBQcm9mZXNzb3IgRWR3
+        YXJkIEJ1cmdlciwgcHJvZmVzc29yIG9mIG1hdGhlbWF0aWNzIGF0IFdpbGxp
+        YW1zIENvbGxlZ2UsIGFuZCBJ4oCZZCBsaWtlIHRvIHdlbGNvbWUgeW91IHRv
+        IHRoaXMgcmVhbGx5IGludGVyZXN0aW5nLCBuZXcsIGFuZCBhbiBpbm5vdmF0
+        aXZlIGVudmlyb25tZW50IGZvciBsZWFybmluZy4gIFdoYXQgd2XigJlyZSBn
+        b2luZyB0byBkbyBpcyB3ZSBhcmUgZ29pbmcgdG8gYWN0dWFsbHkgdHVybiB0
+        aGluZ3MgYXJvdW5kIGFuZCB0cnkgdG8gbWFrZSBjYWxjdWx1cyBpbnRlcmVz
+        dGluZywgY2FsY3VsdXMgdW5kZXJzdGFuZGFibGUsIGFuZCBjYWxjdWx1cyBm
+        dW4uICBOb3csIHlvdSBrbm93LCBhIGxvdCBvZiB5b3UsIGluIGZhY3QsIEni
+        gJltIGhvcGluZyB0aGF0IHlvdSBhY3R1YWxseSBoYXZlIGEgY2FsY3VsdXMg
+        Ym9vaywgaXQgbWlnaHQgbG9vayBzb21ldGhpbmcgbGlrZSB0aGlzLCBoZXJl
+        4oCZcyBvbmUsIGdlZSwgaXTigJlzIGEgbGl0dGxlIGhlYXZ5LiAgSGVyZSBp
+        dCBpcy4gIFRoaXMgb25l4oCZcyBjYWxsZWQg4oCcQ2FsY3VsdXMsIE1hdGgg
+        dG8gUHVtcCBZb3UgVXDigJ0uICBXZWxsLCB0aGUgb25seSBwdW1waW5nIHRo
+        YXQgSSB0aGluayB0aGlzIGJvb2sgaXMgZ29pbmcgdG8gZG8gaXMgaWYgeW91
+        IGFjdHVhbGx5IHVzZSBpdCBsaWtlIHRoaXMgYW5kIGJyaW5nIGl0IHRvIHRo
+        ZSB3ZWlnaHQgcm9vbSBiZWNhdXNlIGl04oCZcyBzbyBoZWF2eSwgaXTigJlz
+        IHNvIGJpZy4gIE1heWJlIHlvdXIgYm9vayBpcyBqdXN0IGFzIGJpZyBhcyB0
+        aGlzOyBtYXliZSBpdOKAmXMgZXZlbiBiaWdnZXIsIEkgZG9u4oCZdCBrbm93
+        LjwvcD4KCjxwPjxzcGFuIGNsYXNzPSJ0cmFuc2NyaXB0X25hdmlnYXRpb24i
+        IHRpbWU9IjYwIj5QbGF5IGZyb20gaGVyZSAmZ3Q7IDwvc3Bhbj4gSGF2ZSB5
+        b3UgcmVhZCB5b3VyIGJvb2ssIGJ5IHRoZSB3YXk/ICBXZWxsLCBpdCB3b3Vs
+        ZCBiZSBncmVhdCBpZiB5b3UgcmVhZCBpdCwgc2VyaW91c2x5LCBidXQgSeKA
+        mWxsIGxldCB5b3UgaW4gb24gYSBsaXR0bGUgc2VjcmV0LiAgSSB0aGluayBt
+        b3N0IHBlb3BsZSBkb27igJl0IHJlYWQgdGhpcyBib29rLCBhbmQsIGluIGZh
+        Y3QsIEnigJlsbCBsZXQgeW91IGluIG9uIGEgYmlnZ2VyIHNlY3JldC4gIFdo
+        ZW4gSSB0b29rIGNhbGN1bHVzLCBJIGRpZG7igJl0IHJlYWQgdGhlIGJvb2ss
+        IGJ1dCBkb27igJl0IHRlbGwgcGVvcGxlLiAgQW55d2F5LCB0aGUgcG9pbnQg
+        aXMgdGhpcyBpcyBzbyBjb2xkIGFuZCBkcnkgYW5kIGZpbGxlZCB3aXRoIHRo
+        ZW9yZW1zIGFuZCBwcm9vZnMgYW5kIGFsbCBzb3J0cyBvZiBzdHVmZiwgYW5k
+        IHVzdWFsbHksIHdoYXQgZm9sa3MgZG8gaXMganVzdCBydW4gcmlnaHQgdG8g
+        dGhlIGJhY2sgb2YgZWFjaCBzZWN0aW9uIGFuZCB0cnkgdGhlIHByb2JsZW1z
+        IGFuZCB3aGVuIHRoZXkgY2Fu4oCZdCBkbyB0aGUgcHJvYmxlbSwgdGhleSBs
+        b29rIGF0IHRoZSB3b3JrZWQgb3V0IHByb2JsZW1zLiAgQW5kIGl04oCZcyBo
+        YXJkIHRvIGdldCBhIGdvb2QgdW5kZXJzdGFuZGluZyBvZiB3aGF0IGNhbGN1
+        bHVzIGlzIGFsbCBhYm91dC48L3A+Cgo8cD48c3BhbiBjbGFzcz0idHJhbnNj
+        cmlwdF9uYXZpZ2F0aW9uIiB0aW1lPSIxODAiPlBsYXkgZnJvbSBoZXJlICZn
+        dDsgPC9zcGFuPiBXZSB3YW50IHRvIHR1cm4gdGhhdCBhcm91bmQuICBXaGF0
+        IHdlIHdhbnQgdG8gZG8gaGVyZSBpcyBhY3R1YWxseSBjcmVhdGUgYW4gZW52
+        aXJvbm1lbnQgd2hlcmUgd2UgZGlzY3VzcyB0aGUgY2FsY3VsdXMsIHdlIGV4
+        cGxhaW4gaXQgaW4gc2ltcGxlIGVhc3kgdG8gZm9sbG93IHRlcm1zIGFuZCBy
+        ZWFsbHkgc2VlIHRoYXQgaXTigJlzIHNvcnQgb2YgYW4gaW50ZXJlc3Rpbmcg
+        ZW5kZWF2b3IsIHRoYXQgdGhlcmXigJlzIGEgbG90IG9mIHNvcnQgb2YgdGhp
+        bmdzIHRoYXQgbWFrZSBhIHdob2xlIGJ1bmNoIG9mIHNlbnNlLCBhbmQgdGhh
+        dCBpdOKAmXMgYWN0dWFsbHkgc29ydCBvZiBmdW4uICBBbmQgYWxzbyBlbXBv
+        d2VyIHlvdSB3aXRoIHRoZSBhYmlsaXR5IHRvIHVuZGVyc3RhbmQgaXQgYW5k
+        IHRvIGFsc28gdW5kZXJzdGFuZCBvdGhlciB0aGluZ3MuICBTbywgdGhlIGRp
+        ZmZlcmVuY2UgaXMsIHdoYXQncyB0aGUgZGlmZmVyZW5jZSBiZXR3ZWVuIHdo
+        YXQgd2UgYXJlIGRvaW5nIGhlcmUgYW5kIHRoaXMuICBXZWxsLCBmaXJzdCBv
+        ZiBhbGwsIHRoaXMgaXMgb24gdGhlIGluZm9ybWF0aW9uIHN1cGVyIGhpZ2h3
+        YXkuICBJ4oCZbSBjb21pbmcgdG8geW91IGNvdXJ0ZXN5IG9mIHRlY2hub2xv
+        Z3kuICBJIG1lYW4sIEnigJltIGNvbWluZyBvdmVyIHRoZSBhaXJ3YXZlcyBh
+        bmQgeW914oCZcmUgc2VlaW5nIG1lIC0tIGp1LCBqdSwganUuICBJdOKAmXMg
+        c29ydCBvZiBmdW4sIGlzbuKAmXQgaXQ/ICBXZWxsLCBJ4oCZbSBzb3J0IG9m
+        IGFjdHVhbGx5IGVuam95aW5nIGl0LCDigJhjYXVzZSBpdCBnaXZlcyBtZSBh
+        IHRpbmdsZSByaWdodCBkb3duIG15IHNwaW5lLCBidXQgdGhhdOKAmXMgYW5v
+        dGhlciBzdG9yeS48L3A+Cgo8cD48c3BhbiBjbGFzcz0idHJhbnNjcmlwdF9u
+        YXZpZ2F0aW9uIiB0aW1lPSIyNDAiPlBsYXkgZnJvbSBoZXJlICZndDsgPC9z
+        cGFuPiBPa2F5LCBub3csIHdoYXTigJlzIGdvaW5nIG9uIGhlcmUgdGhvdWdo
+        LCBpcyB3ZeKAmXZlIGNyZWF0ZWQgYW4gZW52aXJvbm1lbnQgd2hlcmUgd2Ug
+        YXJlIGdvaW5nIHRvIGludGVyYWN0IHdpdGggZWFjaCBvdGhlci4gIFNvLCBJ
+        4oCZbGwgdGFsayBhYm91dCBzdHVmZiBhbmQgdGhlbiB3ZeKAmWxsIGFjdHVh
+        bGx5IGhhdmUgYW4gb3Bwb3J0dW5pdHkgZm9yIHlvdSB0byB0cnkgc29tZXRo
+        aW5nLCBhbmQgZm9yIHlvdSB0byBnZXQgeW91ciBoYW5kcyBkaXJ0eSBhbmQg
+        dHJ5IGEgcHJvYmxlbSwgb3IgdHJ5IGEgcXVlc3Rpb24sIGFuZCB0aGVuIHdl
+        4oCZbGwgdGFsayBhYm91dCBpdCBhbmQgZ2V0IHNvbWUgZmVlZCBiYWNrIHdp
+        dGggZWFjaCBvdGhlci4gIE5vdyB5b3XigJlsbCBub3RpY2UgcmlnaHQgb3Zl
+        ciBoZXJlIHRoZXJl4oCZcyBhbm90aGVyIHdoaXRlIHJpZ2h0IHJlY3Rhbmds
+        ZSBhbmQgdGhhdOKAmXMgdGhlIHBsYWNlIHdoZXJlIEnigJlsbCBhY3R1YWxs
+        eSBzb3J0IG9mIHdyaXRlIHRoaW5ncyBpbiBpZiBJIHdhbnQgc29tZXRoaW5n
+        IHRvIGJlIHRoZXJlIGZvciB5b3UgdG8gc2VlLiAgSeKAmWxsIHB1dCBpdDsg
+        Zm9yIGV4YW1wbGUsIEnigJltIG5vdCBnb2luZyB0byBzYXksIHlvdSBrbm93
+        LCBjYWxjdWx1cyBpcyBjb29sLiAgVGhlcmUgeW91IHNlZS4gIEFuZCBJIHdh
+        bnQgdG8gc2F5LCBtYXRoIGlzbuKAmXQgYXMgYXdmdWwgYXMgeW91IG1heSB0
+        aGluay4gIEhlYXIgbWU/ICBTbyB3ZSB1c2UgdGhhdCBhIGxvdCBhbmQgdGhh
+        dOKAmXMgYmFzaWNhbGx5IHdoYXQgd2XigJlyZSBhbGwgYWJvdXQgaGVyZS4g
+        IFRoZSBhY3R1YWwgc2V0IGlzIGdvaW5nIHRvIGJlLCB3aGVuIHdlIGFjdHVh
+        bGx5IGxlY3R1cmUsIHRoZXJl4oCZbGwgYmUgYSB0YWJsZSBoZXJlLiAgSeKA
+        mWxsIGJlIHdyaXRpbmcgb24gdGhlIHRhYmxlIGFuZCB5b3XigJlsbCBiZSBh
+        YmxlIHRvIHNlZSB3aGF0IEnigJltIHdyaXRpbmcsIGFuZCB0aGlzIGlzIG91
+        ciBzZXQuICBEbyB5b3UgbGlrZSBvdXIgc2V0IGJhY2sgaGVyZSwgaXTigJlz
+        IHNvcnQgb2YgYmx1ZSwgbm90IHZlcnkgZXhjaXRpbmcsIGJ1dCB0aGVyZeKA
+        mXMgYSBsb3Qgb2YgcG9zc2liaWxpdGllcywgYSBsb3Qgb2Ygb3Bwb3J0dW5p
+        dGllcywgYW5kIHdl4oCZbGwgaGF2ZSBmdW4gd2l0aCBpdC4gICAKRm9yIGV4
+        YW1wbGUsIHN1cHBvc2UgSSB3YW50IHRvIHRlbGwgeW91IHRoZSB3ZWF0aGVy
+        LiAgTm93IHlvdSBzZWUsIHRoZXJlIGl0IGlzLCBhbmQgeW91IGNhbiBzZWUg
+        TWFzc2FjaHVzZXR0cy4gIEl04oCZcyBiZWF1dGlmdWwsIHRoYXTigJlzIHdo
+        ZXJlIEnigJltIGZyb20uICBNYXliZSB5b3Ugd2FudCB0byBhY3R1YWxseSBn
+        byBhbmQgdG8gdGFrZSBhIGxvb2sgYXQgdGhlIG1vb24uICBXZWxsLCB0aGVy
+        ZeKAmXMgYSBtb29uIHNob3QuICBUZXh0Ym9va3MgY2Fu4oCZdCBkbyB0aGF0
+        LiAgSXTigJlzIGdvaW5nIHRvIGJlIHZpcnR1YWwuICBJdOKAmXMgZ29pbmcg
+        dG8gYmUgbm93LCBhbmQgSSBob3BlIHlvdSBhcmUgZ29pbmcgdG8gcmVhbGx5
+        IGVuam95IGl0LiAgU28sIEkgd2FudCB5b3UgdG8gc3RheSB3aXRoIHVzIGFu
+        ZCBJIGhvcGUgeW91IGhhdmUgc29tZSBmdW4uICBUaGFua3MuPC9wPg==
     http_version: 
-  recorded_at: Thu, 26 Jan 2012 19:26:23 GMT
+  recorded_at: Tue, 13 Mar 2012 18:02:11 GMT
+recorded_with: VCR 2.0.0

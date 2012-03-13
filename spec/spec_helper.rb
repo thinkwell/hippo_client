@@ -19,8 +19,8 @@ VCR.configure do |c|
   c.hook_into :webmock
   c.register_request_matcher :john_hancock_headers do |r1, r2|
     jh_headers = lambda do |key, val|
-      (key == 'X-Api-Timestamp' && val.to_s =~ /^[0-9]{10}$/) ||
-        (key == 'X-Api-Signature' && val.to_s =~ /^[0-9a-f]{32}$/)
+      (key == 'X-Api-Timestamp' && val[0].to_s =~ /^[0-9]{10}$/) ||
+        (key == 'X-Api-Signature' && val[0].to_s =~ /^[0-9a-f]{32}$/)
     end
 
     (r1.headers.reject &jh_headers) == (r2.headers.reject &jh_headers)

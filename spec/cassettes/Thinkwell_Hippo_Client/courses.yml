@@ -1,77 +1,107 @@
---- 
-recorded_with: VCR 2.0.0.beta2
-http_interactions: 
-- request: 
+---
+http_interactions:
+- request:
     method: get
     uri: http://localhost:3000/courses.json
-    body: ""
-    headers: 
-      X-Api-Timestamp: 
-      - "1327605985"
-      Accept: 
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
       - application/json
-      X-Api-Key: 
+      User-Agent:
+      - Ruby
+      X-Api-Key:
       - 4d26276a99cf2b1291000001
-      X-Api-Signature: 
-      - 6c5dee1d424f15a20da6cfcdf59d0535
-  response: 
-    status: 
+      X-Api-Timestamp:
+      - '1331661732'
+      X-Api-Signature:
+      - !binary |-
+        NTg5MDhlMDgzMWY4MDZmNDc5YjhjNzI5ZGRmMjcyZmI=
+  response:
+    status:
       code: 200
       message: OK
-    headers: 
-      Content-Type: 
-      - application/json; charset=utf-8
-      X-Ua-Compatible: 
-      - IE=Edge
-      Connection: 
-      - close
-      Etag: 
-      - "\"6e31ecb2542a0890bbfeff6ce77fcd66\""
-      X-Runtime: 
-      - "0.240316"
-      Date: 
-      - Thu, 26 Jan 2012 19:26:25 GMT
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Status: 
+    headers:
+      Date:
+      - Tue, 13 Mar 2012 18:02:12 GMT
+      Status:
       - 200 OK
-    body: "[{\"id\":\"4d76a706f7764853be000003\",\"changelog\":null,\"created_at\":null,\"name\":\"Calculus\",\"theme\":null,\"product_id\":\"4d76a704f7764853be000001\"},{\"id\":\"4dee712bf776482745000003\",\"changelog\":null,\"created_at\":\"2011-06-06T19:00:00-05:00\",\"name\":\"College Algebra\",\"theme\":null,\"product_id\":\"4dee712af776482745000001\"},{\"id\":\"4ea712787fd4eff455000002\",\"changelog\":null,\"created_at\":\"2011-10-24T19:00:00-05:00\",\"name\":\"College Algebra 2nd Edition\",\"theme\":null,\"product_id\":\"4dee712af776482745000001\"}]"
+      Connection:
+      - close
+      X-Csrf-Token:
+      - UW0/v8keP3SkU6kWa7pDFH3LJ6OZ8kabZyRt8S09tlE=
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"cdc11670e54ae987aceb8be4fe5fc1a1"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _hippo_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTI5MDRiOWM5YjRiMDZjYTlhNDVhZTRjM2FiYWZjOWU1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVVXMC92OGtlUDNTa1U2a1dhN3BERkgzTEo2T1o4a2FiWnlSdDhTMDl0bEU9BjsARg%3D%3D--e4ec631b17eb32bdc39a3d1a07d9c9f4c6442a22;
+        path=/; HttpOnly
+      X-Request-Id:
+      - cdd85a92821348268faaa6ecb1b41cce
+      X-Runtime:
+      - '0.017298'
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":"4d76a706f7764853be000003","changelog":null,"created_at":null,"mapleta_parent_id":5,"name":"Calculus","theme":"","user_roles":[],"product_id":"4d76a704f7764853be000001"},{"id":"4dee712bf776482745000003","changelog":null,"created_at":"2011-06-06T19:00:00-05:00","mapleta_parent_id":6,"name":"College
+        Algebra","theme":null,"user_roles":[],"product_id":"4dee712af776482745000001"},{"id":"4ea712787fd4eff455000002","changelog":null,"created_at":"2011-10-24T19:00:00-05:00","mapleta_parent_id":6,"name":"College
+        Algebra 2nd Edition","theme":null,"user_roles":[],"product_id":"4dee712af776482745000001"}]'
     http_version: 
-  recorded_at: Thu, 26 Jan 2012 19:26:25 GMT
-- request: 
+  recorded_at: Tue, 13 Mar 2012 18:02:12 GMT
+- request:
     method: get
     uri: http://localhost:3000/courses.json?product=4d76a704f7764853be000001
-    body: ""
-    headers: 
-      X-Api-Timestamp: 
-      - "1327605985"
-      Accept: 
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
       - application/json
-      X-Api-Key: 
+      User-Agent:
+      - Ruby
+      X-Api-Key:
       - 4d26276a99cf2b1291000001
-      X-Api-Signature: 
-      - 6c5dee1d424f15a20da6cfcdf59d0535
-  response: 
-    status: 
+      X-Api-Timestamp:
+      - '1331661732'
+      X-Api-Signature:
+      - !binary |-
+        NTg5MDhlMDgzMWY4MDZmNDc5YjhjNzI5ZGRmMjcyZmI=
+  response:
+    status:
       code: 200
       message: OK
-    headers: 
-      Content-Type: 
-      - application/json; charset=utf-8
-      X-Ua-Compatible: 
-      - IE=Edge
-      Connection: 
-      - close
-      Etag: 
-      - "\"6649fa568f368f30b61be2d7d06f4fcb\""
-      X-Runtime: 
-      - "0.185526"
-      Date: 
-      - Thu, 26 Jan 2012 19:26:26 GMT
-      Cache-Control: 
-      - max-age=0, private, must-revalidate
-      Status: 
+    headers:
+      Date:
+      - Tue, 13 Mar 2012 18:02:12 GMT
+      Status:
       - 200 OK
-    body: "[{\"id\":\"4d76a706f7764853be000003\",\"changelog\":null,\"created_at\":null,\"name\":\"Calculus\",\"theme\":null,\"product_id\":\"4d76a704f7764853be000001\"}]"
+      Connection:
+      - close
+      X-Csrf-Token:
+      - 85vSfXSNGtI+65RYJiqFz7ZP3m1b8KXLEs07H5fm7jg=
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"e0aeb07db4cfa577c57cef815f60194b"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _hippo_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTg2ZmQ2MzA4Mzk3MWRjNGY2NGYyODllNTdmOGE2ZDNlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTg1dlNmWFNOR3RJKzY1UllKaXFGejdaUDNtMWI4S1hMRXMwN0g1Zm03amc9BjsARg%3D%3D--28ec3fb4cd879eb5a91ed61f2440ea86f66e8914;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 6bf27f64532a9030a5b8f22482ca7c38
+      X-Runtime:
+      - '0.010039'
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":"4d76a706f7764853be000003","changelog":null,"created_at":null,"mapleta_parent_id":5,"name":"Calculus","theme":"","user_roles":[],"product_id":"4d76a704f7764853be000001"}]'
     http_version: 
-  recorded_at: Thu, 26 Jan 2012 19:26:26 GMT
+  recorded_at: Tue, 13 Mar 2012 18:02:12 GMT
+recorded_with: VCR 2.0.0
