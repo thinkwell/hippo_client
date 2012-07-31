@@ -44,6 +44,12 @@ describe CourseTree do
       @tree.each_with_depth {|node, depth| ary << depth}
       ary.should == [0, 1, 2, 0, 1, 1]
     end
+
+    it "includes the parent node of each node" do
+      ary = []
+      @tree.each_with_depth {|node, depth, parent_node| ary << (parent_node.nil? ? nil : parent_node.id.to_i)}
+      ary.should == [nil, 1, 2, nil, 4, 4]
+    end
   end
 
   context "#map" do

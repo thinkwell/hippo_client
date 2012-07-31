@@ -15,20 +15,20 @@ module Thinkwell::Hippo
 
       # Iterates over all nodes in depth-first order
       def each
-        each_with_depth {|node, depth| yield node }
+        each_with_depth {|node, depth, parent_node| yield node }
       end
 
       # Iterates over all nodes in depth-first order
-      # including the depth of each node (starting at depth=0)
+      # including the depth and parent_node of each node (starting at depth=0)
       def each_with_depth
-        fn = lambda do |child_nodes, depth|
+        fn = lambda do |child_nodes, depth, parent_node|
           child_nodes.each do |node|
-            yield node, depth
-            fn.call(node.child_nodes, depth+1) if node.child_nodes
+            yield node, depth, parent_node
+            fn.call(node.child_nodes, depth+1, node) if node.child_nodes
           end
         end
 
-        fn.call(self.child_nodes, 0)
+        fn.call(self.child_nodes, 0, nil)
       end
 
     end
