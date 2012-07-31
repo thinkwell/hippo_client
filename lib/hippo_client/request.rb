@@ -53,7 +53,7 @@ module Thinkwell::Hippo
       begin
         response = http.request(request)
       rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, Errno::ECONNREFUSED, EOFError,
-             Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
+             Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError, SocketError => e
         raise Errors::NetworkError, e
       end
 
