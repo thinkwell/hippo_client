@@ -2,7 +2,7 @@ module Thinkwell::Hippo
   module Model
     class Node
       include HashInitialize
-      attr_accessor :id, :name, :number, :book_number, :type, :content_id, :content_name, :book_content_id, :content_version, :meta, :child_nodes
+      attr_accessor :id, :name, :number, :book_number, :type, :content_id, :content_name, :book_content_id, :content_version, :meta, :child_nodes, :numbering_enabled, :override_label
 
       def child_nodes=(value)
         value = value.map do |v|
