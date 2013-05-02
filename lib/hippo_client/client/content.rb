@@ -17,6 +17,10 @@ module Thinkwell::Hippo
         fetch("courses/#{courseId}/content/#{contentId}/view", opts, format)
       end
 
+      def contentMetadata(courseId, contentId, format='vtt', opts={})
+        fetch("courses/#{courseId}/content/#{contentId}/metadata", opts, format)
+      end
+
     end
   end
 end
