@@ -14,7 +14,8 @@ module Thinkwell::Hippo
       #   template
       #   parameters
       def contentView(courseId, contentId, format='html', opts={})
-        fetch("courses/#{courseId}/content/#{contentId}/view", opts, format)
+        coursePath = (courseId ? "courses/#{courseId}/" : "")
+        fetch("#{coursePath}content/#{contentId}/view", opts, format)
       end
 
     end
