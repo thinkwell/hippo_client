@@ -6,7 +6,8 @@ module Thinkwell::Hippo
       # Possible options:
       #   version
       def content(courseId, contentId, opts={})
-        hydrate :Content, fetch("courses/#{courseId}/content/#{contentId}", opts)
+        path = courseId.nil? ? "content/#{contentId}" : "courses/#{courseId}/content/#{contentId}"
+        hydrate :Content, fetch(path, opts)
       end
 
       # Possible options:
