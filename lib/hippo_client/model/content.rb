@@ -10,7 +10,7 @@ module Thinkwell::Hippo
                     # Maple
                     :maple_class_id, :maple_assignment_id, :maple_extra_assignment_ids, :gradebook,
                     # SampleProblemCollection
-                    :sample_problem_ids,
+                    :sample_problem_ids,:video_ids
                     # WolframCdf
                     :wolfram_id, :signature, :width, :height,
                     # CanvasQuiz
