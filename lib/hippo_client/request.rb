@@ -49,10 +49,10 @@ module Thinkwell::Hippo
 
       options = {:use_ssl => uri.scheme == 'https'}
       options[:verify_mode] = OpenSSL::SSL::VERIFY_NONE unless Rails.env.production?
-      http = Net::HTTP.new(uri.host, uri.port, options)
-
       begin
-        response = http.request(request)
+        response = Net::HTTP.start(uri.host, uri.port, options) do |http|
+          http.request(request)
+        end
       rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, Errno::ECONNREFUSED, EOFError,
              Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError, SocketError => e
         raise Errors::NetworkError, e
