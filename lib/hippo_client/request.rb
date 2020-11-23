@@ -47,8 +47,9 @@ module Thinkwell::Hippo
         JohnHancock::Signature.sign!(options['signature']['algorithm'], request, options['signature']['options'] || {})
       end
 
-      http = Net::HTTP.new(uri.host, uri.port)
-      http.use_ssl = true if uri.scheme == 'https'
+      options = {:use_ssl => uri.scheme == 'https'}
+      options[:verify_mode] = OpenSSL::SSL::VERIFY_NONE unless Rails.env.production?
+      http = Net::HTTP.new(uri.host, uri.port, options)
 
       begin
         response = http.request(request)
