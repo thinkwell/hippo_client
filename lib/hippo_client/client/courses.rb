@@ -6,7 +6,7 @@ module Thinkwell::Hippo
       # Possible options:
       #   product
       def courses(opts={})
-        hydrate :Course, fetch('courses', opts)
+        fetch('courses', opts)
       end
 
       # Possible options:

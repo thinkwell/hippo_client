@@ -4,7 +4,7 @@ module Thinkwell::Hippo
     module Products
 
       def products(opts={})
-        hydrate :Product, fetch('products', opts)
+        fetch('products', opts)
       end
 
       def product(productId)
