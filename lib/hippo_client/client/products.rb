@@ -3,8 +3,8 @@ module Thinkwell::Hippo
     # Defines all api calls related to products
     module Products
 
-      def products
-        hydrate :Product, fetch('products')
+      def products(opts={})
+        hydrate :Product, fetch('products', opts)
       end
 
       def product(productId)
