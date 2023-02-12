@@ -11,6 +11,7 @@ module Thinkwell
       autoload :CourseTree,       'hippo_client/model/course_tree'
       autoload :Node,             'hippo_client/model/node'
       autoload :Content,          'hippo_client/model/content'
+      autoload :Assessment,       'hippo_client/model/assessment'
     end
 
     module Errors
