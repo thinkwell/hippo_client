@@ -18,7 +18,7 @@ module Thinkwell::Hippo
     include Client::Courses
     include Client::CourseTrees
     include Client::Content
-    include Client::Assessment
+    include Client::Assessments
 
 
     include Request
