@@ -4,7 +4,7 @@ module Thinkwell::Hippo
     module Assessments
 
       def assessments(opts={})
-        hydrate :Assessment, fetch('assessments', opts)
+        fetch('assessments', opts)
       end
 
       def assessment(assessmentId, opts={})
